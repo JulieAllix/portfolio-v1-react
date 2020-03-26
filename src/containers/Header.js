@@ -10,8 +10,8 @@ const mapStateToProps = (state) => ({
 
 // == Actions / dispatch
 const mapDispatchToProps = (dispatch) => ({
-  changeOpeningStatus: () => {
-    dispatch(changeOpeningStatus());
+  changeOpeningStatus: (bool) => {
+    dispatch(changeOpeningStatus(bool));
   },
 });
 

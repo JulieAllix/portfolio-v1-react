@@ -5,13 +5,16 @@ import classNames from 'classnames';
 
 import HeaderStyled from './HeaderStyled';
 
-const Header = ({ projectIsOpen }) => {
-  //const projectIsOpen = true;
+const Header = ({ projectIsOpen, changeOpeningStatus }) => {
+  const handleClick = () => {
+    changeOpeningStatus(!projectIsOpen);
+    console.log(!projectIsOpen);
+  };
   return (
     <HeaderStyled>
       <div className="julie">Julie Allix</div>
       <ul className="menu">
-        <li className="menu-link">Projects</li>
+        <li className="menu-link" onClick={handleClick}>Projects</li>
         <ul className="dropdown">
           <Link to="/grocereaz">
             <li className={classNames({
@@ -63,6 +66,7 @@ const Header = ({ projectIsOpen }) => {
 
 Header.propTypes = {
   projectIsOpen: PropTypes.bool.isRequired,
+  changeOpeningStatus: PropTypes.func.isRequired,
 };
 
 // == Export

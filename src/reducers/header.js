@@ -12,7 +12,7 @@ const headerReducer = (state = initialState, action = {}) => {
     case CHANGE_OPENING_STATUS:
       return {
         ...state,
-        projectIsOpen: !initialState.projectIsOpen,
+        projectIsOpen: action.bool,
       };
 
     default:
