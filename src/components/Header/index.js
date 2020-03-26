@@ -17,31 +17,37 @@ const Header = ({ projectIsOpen, changeOpeningStatus }) => {
         <li className="menu-link" onClick={handleClick}>Projects</li>
         <ul className="dropdown">
           <Link to="/grocereaz">
-            <li className={classNames({
-              'projects--open': projectIsOpen,
-              'dropdown-item': true,
-              grocereaz: true,
-            })}
+            <li
+              className={classNames({
+                'projects--open': projectIsOpen,
+                'dropdown-item': true,
+                grocereaz: true,
+              })}
+              onClick={handleClick}
             >
               Grocer'eaz
             </li>
           </Link>
           <Link to="/break-free">
-            <li className={classNames({
-              'projects--open': projectIsOpen,
-              'dropdown-item': true,
-              'break-free': true,
-            })}
+            <li
+              className={classNames({
+                'projects--open': projectIsOpen,
+                'dropdown-item': true,
+                'break-free': true,
+              })}
+              onClick={handleClick}
             >
               Break Free
             </li>
           </Link>
           <Link to="/study-cards">
-            <li className={classNames({
-              'projects--open': projectIsOpen,
-              'dropdown-item': true,
-              'study-cards': true,
-            })}
+            <li
+              className={classNames({
+                'projects--open': projectIsOpen,
+                'dropdown-item': true,
+                'study-cards': true,
+              })}
+              onClick={handleClick}
             >
               Study Cards
             </li>

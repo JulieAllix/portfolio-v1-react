@@ -25,6 +25,7 @@ const HeaderStyled = styled.div`
     }
     .menu-link {
       margin: auto .3em;
+      cursor: pointer;
     }
     .dropdown {
       position: absolute;
