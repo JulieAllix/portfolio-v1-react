@@ -6,6 +6,8 @@ export const darken = (color, percent) => tinycolor(color).darken(percent).toStr
 const theme = {
   colorOne: '#5bb371',
   colorTwo: '#5bb371',
+  julieFont: 'Lobster',
+  contentFont: 'Lato',
 };
 
 export default theme;
