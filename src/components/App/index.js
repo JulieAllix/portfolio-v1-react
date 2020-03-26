@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from 'src/components/Header';
+import Header from 'src/containers/Header';
 // import reactLogo from './react-logo.svg';
 import AppStyled from './AppStyled';
 

@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 
-import demoReducer from './demo';
+import headerReducer from './header';
 
 const rootReducer = combineReducers({
-  demo: demoReducer,
-  // ... autres reducers
+  header: headerReducer,
 });
 
 export default rootReducer;

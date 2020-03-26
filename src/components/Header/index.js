@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import HeaderStyled from './HeaderStyled';
 
-const Header = () => {
-  const projectIsOpen = true;
+const Header = ({ projectIsOpen }) => {
+  //const projectIsOpen = true;
   return (
     <HeaderStyled>
       <div className="julie">Julie Allix</div>
@@ -60,6 +61,9 @@ const Header = () => {
   );
 };
 
+Header.propTypes = {
+  projectIsOpen: PropTypes.bool.isRequired,
+};
 
 // == Export
 export default Header;
