@@ -19,9 +19,15 @@ const HeaderStyled = styled.div`
     flex-direction: row;
     font-family: ${theme.contentFont};
     margin: auto 1em;
+    position: relative;
   }
   .menu-link {
     margin: auto .3em;
+  }
+  .dropdown {
+    position: absolute;
+    top: 1.7em;
+    left: .2em;
   }
   @media only screen and (min-width: 650px) {
 
