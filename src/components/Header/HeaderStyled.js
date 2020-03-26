@@ -36,22 +36,28 @@ const HeaderStyled = styled.div`
     }
     .grocereaz {
       transform: translateX(1000px);
+      display: none;
       transition: .6s;
       &.projects--open{
+        display: flex;
         transform: translateX(0);
       }
     }
     .break-free {
       transform: translateX(1000px);
+      display: none;
       transition: .7s;
       &.projects--open{
+        display: flex;
         transform: translateX(0);
       }
     }
     .study-cards {
       transform: translateX(1000px);
+      display: none;
       transition: .8s;
       &.projects--open{
+        display: flex;
         transform: translateX(0);
       }
     }

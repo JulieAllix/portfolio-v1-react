@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, no-console */
+/* eslint-disable no-unused-vars, no-console 
 const logMiddleware = (store) => (next) => (action) => {
   console.log('logMiddleware laisse passer : ', action);
 
@@ -7,3 +7,4 @@ const logMiddleware = (store) => (next) => (action) => {
 };
 
 export default logMiddleware;
+*/

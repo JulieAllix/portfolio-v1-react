@@ -8,7 +8,6 @@ import HeaderStyled from './HeaderStyled';
 const Header = ({ projectIsOpen, changeOpeningStatus }) => {
   const handleClick = () => {
     changeOpeningStatus(!projectIsOpen);
-    console.log(!projectIsOpen);
   };
   return (
     <HeaderStyled>
