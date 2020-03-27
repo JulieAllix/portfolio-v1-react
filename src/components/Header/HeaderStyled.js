@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
 
+
 const HeaderStyled = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,9 +16,24 @@ const HeaderStyled = styled.div`
     font-size: 2.3em;
     margin: auto .5em;
     color: ${theme.colorOne};
+    width: 100%;
+    text-align: center;
+  }
+  .burger-menu {
+    display: block;
+    margin-right: 1em;
+  }
+  .menu {
+    display: none;
   }
 
   @media only screen and (min-width: 650px) {
+    .julie {
+      text-align: left;
+    }
+    .burger-menu {
+      display: none;
+    }
     .menu {
       display: flex;
       flex-direction: row;

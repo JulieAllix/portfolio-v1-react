@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { Icon } from 'semantic-ui-react';
 import classNames from 'classnames';
 
 import HeaderStyled from './HeaderStyled';
@@ -12,6 +13,9 @@ const Header = ({ projectIsOpen, changeOpeningStatus }) => {
   return (
     <HeaderStyled>
       <div className="julie">Julie Allix</div>
+      <div className="burger-menu">
+        <Icon name="bars" size="big" color="grey" />
+      </div>
       <ul className="menu">
         <li className="menu-link" onClick={handleClick}>Projects</li>
         <ul className="dropdown">
