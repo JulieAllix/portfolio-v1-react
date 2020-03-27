@@ -7,8 +7,9 @@ const HeaderStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 10vh;
+  width: 100vw;
   border: 1px solid lightgrey;
-  
+
   .julie {
     font-family: ${theme.julieFont};
     font-size: 1.7em;
@@ -34,9 +35,9 @@ const HeaderStyled = styled.div`
     }
     .dropdown-item {
     }
+
     .grocereaz {
       transform: translateX(1000px);
-      display: none;
       transition: .6s;
       &.projects--open{
         display: flex;
@@ -45,7 +46,6 @@ const HeaderStyled = styled.div`
     }
     .break-free {
       transform: translateX(1000px);
-      display: none;
       transition: .7s;
       &.projects--open{
         display: flex;
@@ -54,7 +54,6 @@ const HeaderStyled = styled.div`
     }
     .study-cards {
       transform: translateX(1000px);
-      display: none;
       transition: .8s;
       &.projects--open{
         display: flex;
