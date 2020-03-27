@@ -12,8 +12,9 @@ const HeaderStyled = styled.div`
 
   .julie {
     font-family: ${theme.julieFont};
-    font-size: 1.7em;
+    font-size: 2.3em;
     margin: auto .5em;
+    color: ${theme.colorOne};
   }
 
   @media only screen and (min-width: 650px) {
@@ -25,8 +26,9 @@ const HeaderStyled = styled.div`
       position: relative;
     }
     .menu-link {
-      margin: auto .3em;
+      margin: auto .5em;
       cursor: pointer;
+      font-size: 1.3em;
     }
     .dropdown {
       position: absolute;
@@ -34,6 +36,9 @@ const HeaderStyled = styled.div`
       left: .2em;
     }
     .dropdown-item {
+      font-size: 1.3em;
+      margin-top: .5em;
+      margin-left: .3em;
     }
 
     .grocereaz {
