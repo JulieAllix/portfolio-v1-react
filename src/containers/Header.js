@@ -5,7 +5,7 @@ import { changeOpeningStatus } from 'src/actions/header';
 
 // == Data / state
 const mapStateToProps = (state) => ({
-  projectIsOpen: state.header.projectIsOpen,
+  menuIsOpen: state.header.menuIsOpen,
 });
 
 // == Actions / dispatch

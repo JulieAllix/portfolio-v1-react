@@ -6,23 +6,42 @@ import classNames from 'classnames';
 
 import HeaderStyled from './HeaderStyled';
 
-const Header = ({ projectIsOpen, changeOpeningStatus }) => {
+const Header = ({ menuIsOpen, changeOpeningStatus }) => {
   const handleClick = () => {
-    changeOpeningStatus(!projectIsOpen);
+    changeOpeningStatus(!menuIsOpen);
   };
   return (
     <HeaderStyled>
       <div className="julie">Julie Allix</div>
       <div className="burger-menu">
-        <Icon name="bars" size="big" color="grey" />
+        <div className="burger-menu-icon">
+          <Icon name="bars" size="big" color="grey" onClick={handleClick} />
+        </div>
+        <ul
+          className={classNames({
+            'menu--open': menuIsOpen,
+            'dropdown-burger': true,
+          })}
+        >
+          <Link to="/">
+            <li className="burger-menu-link" onClick={handleClick}>Home</li>
+          </Link>
+          <Link to="/about">
+            <li className="burger-menu-link" onClick={handleClick}>About</li>
+          </Link>
+          <Link to="/oclock">
+            <li className="burger-menu-link" onClick={handleClick}>My training</li>
+          </Link>
+        </ul>
       </div>
+
       <ul className="menu">
         <li className="menu-link" onClick={handleClick}>Projects</li>
         <ul className="dropdown">
           <Link to="/grocereaz">
             <li
               className={classNames({
-                'projects--open': projectIsOpen,
+                'menu--open': menuIsOpen,
                 'dropdown-item': true,
                 grocereaz: true,
               })}
@@ -34,7 +53,7 @@ const Header = ({ projectIsOpen, changeOpeningStatus }) => {
           <Link to="/break-free">
             <li
               className={classNames({
-                'projects--open': projectIsOpen,
+                'menu--open': menuIsOpen,
                 'dropdown-item': true,
                 'break-free': true,
               })}
@@ -46,7 +65,7 @@ const Header = ({ projectIsOpen, changeOpeningStatus }) => {
           <Link to="/study-cards">
             <li
               className={classNames({
-                'projects--open': projectIsOpen,
+                'menu--open': menuIsOpen,
                 'dropdown-item': true,
                 'study-cards': true,
               })}
@@ -74,7 +93,7 @@ const Header = ({ projectIsOpen, changeOpeningStatus }) => {
 };
 
 Header.propTypes = {
-  projectIsOpen: PropTypes.bool.isRequired,
+  menuIsOpen: PropTypes.bool.isRequired,
   changeOpeningStatus: PropTypes.func.isRequired,
 };
 

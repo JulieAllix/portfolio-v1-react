@@ -20,8 +20,28 @@ const HeaderStyled = styled.div`
     text-align: center;
   }
   .burger-menu {
+    position: relative;
+  }
+  .burger-menu-icon {
     display: block;
-    margin-right: 1em;
+    margin-right: 2em;
+  }
+  .dropdown-burger {
+    display: none;
+    position: absolute;
+    right: .5em;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: .5em;
+    margin-top: .5em;
+    &.menu--open{
+      display: block;
+    }
+  }
+  .burger-menu-link {
+    margin-top: .5em;
+    font-family: ${theme.contentFont};
+    font-weight: bold;
   }
   .menu {
     display: none;
@@ -60,7 +80,7 @@ const HeaderStyled = styled.div`
     .grocereaz {
       transform: translateX(1000px);
       transition: .6s;
-      &.projects--open{
+      &.menu--open{
         display: flex;
         transform: translateX(0);
       }
@@ -68,7 +88,7 @@ const HeaderStyled = styled.div`
     .break-free {
       transform: translateX(1000px);
       transition: .7s;
-      &.projects--open{
+      &.menu--open{
         display: flex;
         transform: translateX(0);
       }
@@ -76,7 +96,7 @@ const HeaderStyled = styled.div`
     .study-cards {
       transform: translateX(1000px);
       transition: .8s;
-      &.projects--open{
+      &.menu--open{
         display: flex;
         transform: translateX(0);
       }

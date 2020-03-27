@@ -3,7 +3,7 @@ import { CHANGE_OPENING_STATUS } from 'src/actions/header';
 
 // Initial State
 const initialState = {
-  projectIsOpen: false,
+  menuIsOpen: false,
 };
 
 // Reducer
@@ -12,7 +12,7 @@ const headerReducer = (state = initialState, action = {}) => {
     case CHANGE_OPENING_STATUS:
       return {
         ...state,
-        projectIsOpen: action.bool,
+        menuIsOpen: action.bool,
       };
 
     default:
