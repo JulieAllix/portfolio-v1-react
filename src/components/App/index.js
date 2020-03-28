@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from 'src/containers/Header';
+import Footer from 'src/components/Footer';
 // import reactLogo from './react-logo.svg';
 import AppStyled from './AppStyled';
 
@@ -9,8 +10,7 @@ const App = () => (
     {/* <img src={reactLogo} alt="react logo" />
     */}
     <Header />
-    Main
-    Footer
+    <Footer />
   </AppStyled>
 );
 

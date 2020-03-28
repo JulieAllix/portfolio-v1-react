@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
 
-
 const HeaderStyled = styled.div`
   display: flex;
   flex-direction: row;
