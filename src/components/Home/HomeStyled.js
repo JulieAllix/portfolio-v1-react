@@ -13,10 +13,21 @@ const HomeStyled = styled.div`
       width: 60%;
       height: 100%;
     }
+    .projects-wrapper {
+      border: 2px solid lightgrey;
+      margin: 1em;
+    }
     .skills-section {
       width: 40%;
       height: 100%;
       border-left: 1px solid lightgrey;
+    }
+    .skills-wrapper {
+      border: 2px solid lightgrey;
+      margin: 1em;
+    }
+    .grocereaz:hover ~ .react {
+      background-color: red;
     }
   }
 `;

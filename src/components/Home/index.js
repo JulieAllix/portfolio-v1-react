@@ -8,13 +8,22 @@ const Home = () => {
   const handleClick = () => {
     console.log('clic');
   };
+  const chbg = (color) => {
+    document.getElementById("grocereaz").style.backgroundColor = color;
+  };
   return (
     <HomeStyled>
       <section className="projects-section">
-        Projects
+        <div className="projects-wrapper">
+          <div className="grocereaz" ref={grocereaz}>
+            Grocer'eaz
+          </div>
+        </div>
       </section>
       <section className="skills-section">
-        Skills
+        <div className="skills-wrapper">
+          <span className="react" onMouseOver={chbg('yellow')} onMouseOut={chbg('white')}>React</span>
+        </div>
       </section>
     </HomeStyled>
   );
