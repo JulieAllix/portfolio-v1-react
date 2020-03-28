@@ -4,6 +4,7 @@ import theme from 'src/styles/theme';
 const AppStyled = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 100%;
   overflow: hidden;
