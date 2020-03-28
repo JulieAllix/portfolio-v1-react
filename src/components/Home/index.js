@@ -10,7 +10,12 @@ const Home = () => {
   };
   return (
     <HomeStyled>
-      Home
+      <section className="projects-section">
+        Projects
+      </section>
+      <section className="skills-section">
+        Skills
+      </section>
     </HomeStyled>
   );
 };
