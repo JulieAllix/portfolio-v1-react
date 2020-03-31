@@ -8,6 +8,7 @@ const theme = {
   colorTwo: '#5bb371',
   julieFont: 'Lobster',
   contentFont: 'Lato',
+  titleFont: 'Cabin',
 };
 
 export default theme;

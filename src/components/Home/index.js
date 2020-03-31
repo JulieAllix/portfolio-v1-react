@@ -35,35 +35,51 @@ class Home extends React.Component {
           <div className="projects-wrapper">
             <div
               className={classNames({
+                project: true,
                 grocereaz: true,
                 'highlighted--project': this.state.grocereazIsHighlighted,
               })}
             >
-              Grocer'eaz
+              <div className="project-picture">
+                Picture
+              </div>
+              <div className="project-name">Grocer'eaz</div>
             </div>
             <div
               className={classNames({
+                project: true,
                 portfolio: true,
                 'highlighted--project': this.state.portfolioIsHighlighted,
               })}
             >
-              This portfolio
+              <div className="project-picture">
+                Picture
+              </div>
+              <div className="project-name">This portfolio</div>
             </div>
             <div
               className={classNames({
+                project: true,
                 breakFree: true,
                 'highlighted--project': this.state.breakFreeIsHighlighted,
               })}
             >
-              Break Free
+              <div className="project-picture">
+                Picture
+              </div>
+              <div className="project-name">Break Free</div>
             </div>
             <div
               className={classNames({
+                project: true,
                 studyCards: true,
                 'highlighted--project': this.state.studyCardsIsHighlighted,
               })}
             >
-              Study Cards
+              <div className="project-picture">
+                Picture
+              </div>
+              <div className="project-name">Study Cards</div>
             </div>
           </div>
         </section>
