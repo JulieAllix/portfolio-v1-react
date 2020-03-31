@@ -49,7 +49,15 @@ const HomeStyled = styled.div`
       border: 2px solid lightgrey;
       margin: 1em;
     }
+    .skill {
+      padding: .5em;
+    }
     .grocereaz {
+      &.highlighted--project{
+        background-color: yellow;
+      }
+    }
+    .breakFree {
       &.highlighted--project{
         background-color: yellow;
       }
