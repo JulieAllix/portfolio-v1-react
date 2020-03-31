@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import Project from 'src/components/Project';
 import HomeStyled from './HomeStyled';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -95,54 +96,26 @@ class Home extends React.Component {
       <HomeStyled>
         <section className="projects-section">
           <div className="projects-wrapper">
-            <div
-              className={classNames({
-                project: true,
-                grocereaz: true,
-                'highlighted--project': this.state.grocereazIsHighlighted,
-              })}
-            >
-              <div className="project-picture">
-                Picture
-              </div>
-              <div className="project-name">Grocer'eaz</div>
-            </div>
-            <div
-              className={classNames({
-                project: true,
-                portfolio: true,
-                'highlighted--project': this.state.portfolioIsHighlighted,
-              })}
-            >
-              <div className="project-picture">
-                Picture
-              </div>
-              <div className="project-name">This portfolio</div>
-            </div>
-            <div
-              className={classNames({
-                project: true,
-                breakFree: true,
-                'highlighted--project': this.state.breakFreeIsHighlighted,
-              })}
-            >
-              <div className="project-picture">
-                Picture
-              </div>
-              <div className="project-name">Break Free</div>
-            </div>
-            <div
-              className={classNames({
-                project: true,
-                studyCards: true,
-                'highlighted--project': this.state.studyCardsIsHighlighted,
-              })}
-            >
-              <div className="project-picture">
-                Picture
-              </div>
-              <div className="project-name">Study Cards</div>
-            </div>
+            <Project
+              projectClass="grocereaz"
+              highlightedProject={this.state.grocereazIsHighlighted}
+              projectName="Grocer'eaz"
+            />
+            <Project
+              projectClass="portfolio"
+              highlightedProject={this.state.portfolioIsHighlighted}
+              projectName="This portfolio"
+            />
+            <Project
+              projectClass="breakFree"
+              highlightedProject={this.state.breakFreeIsHighlighted}
+              projectName="Break Free"
+            />
+            <Project
+              projectClass="studyCards"
+              highlightedProject={this.state.studyCardsIsHighlighted}
+              projectName="Study Cards"
+            />
           </div>
         </section>
         <section className="skills-section">
