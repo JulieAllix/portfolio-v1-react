@@ -26,9 +26,12 @@ const HomeStyled = styled.div`
       border: 2px solid lightgrey;
       margin: 1em;
     }
-    .grocereaz:hover ~ .react {
-      background-color: red;
+    .grocereaz {
+      &.highlighted--project{
+        background-color: yellow;
+      }
     }
+
   }
 `;
 
