@@ -11,6 +11,8 @@ class Home extends React.Component {
     super(props);
     this.highlight = this.highlight.bind(this);
     this.removeHighlight = this.removeHighlight.bind(this);
+    this.test = this.test.bind(this);
+    this.test2 = this.test2.bind(this);
     this.targetGrocereaz = this.targetGrocereaz.bind(this);
     this.targetBreakFree = this.targetBreakFree.bind(this);
     this.untargetGrocereaz = this.untargetGrocereaz.bind(this);
@@ -37,6 +39,16 @@ class Home extends React.Component {
 
   untargetBreakFree() {
     this.removeHighlight('breakFree');
+  }
+
+  test(project) {
+    console.log('Hover in');
+    console.log(project);
+  }
+
+  test2(project) {
+    console.log('Hover out');
+    console.log(project);
   }
 
   highlight(project) {
@@ -115,8 +127,9 @@ class Home extends React.Component {
                 key={skill.id}
                 className="skill"
                 id={skill.idName}
-                onMouseOver={this[skill.target]}
-                onMouseOut={this[skill.untarget]}
+                // onMouseOver={this[skill.target]}
+                onMouseOver={this.test(skill.project)}
+                onMouseOut={this.test2(skill.project)}
               >
                 {skill.skill}
               </span>
