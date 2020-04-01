@@ -1,8 +1,8 @@
 import React from 'react';
 // import classNames from 'classnames';
 import projectsData from 'src/assets/data/projectsData';
+import skillsData from 'src/assets/data/skillsData';
 import Project from 'src/components/Project';
-import Skill from 'src/components/Skill';
 import HomeStyled from './HomeStyled';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -12,9 +12,9 @@ class Home extends React.Component {
     this.highlight = this.highlight.bind(this);
     this.removeHighlight = this.removeHighlight.bind(this);
     this.targetGrocereaz = this.targetGrocereaz.bind(this);
-    this.targetBreakfree = this.targetBreakfree.bind(this);
+    this.targetBreakFree = this.targetBreakFree.bind(this);
     this.untargetGrocereaz = this.untargetGrocereaz.bind(this);
-    this.untargetBreakfree = this.untargetBreakfree.bind(this);
+    this.untargetBreakFree = this.untargetBreakFree.bind(this);
     this.state = {
       grocereazIsHighlighted: false,
       portfolioIsHighlighted: false,
@@ -27,7 +27,7 @@ class Home extends React.Component {
     this.highlight('grocereaz');
   }
 
-  targetBreakfree() {
+  targetBreakFree() {
     this.highlight('breakFree');
   }
 
@@ -35,7 +35,7 @@ class Home extends React.Component {
     this.removeHighlight('grocereaz');
   }
 
-  untargetBreakfree() {
+  untargetBreakFree() {
     this.removeHighlight('breakFree');
   }
 
@@ -110,27 +110,17 @@ class Home extends React.Component {
         </section>
         <section className="skills-section">
           <div className="skills-wrapper">
-            <Skill
-              id="react"
-              skill="React"
-              project="grocereaz"
-            />
-            <span
-              className="skill"
-              id="react"
-              onMouseOver={this.targetGrocereaz}
-              onMouseOut={this.untargetGrocereaz}
-            >
-              React
-            </span>
-            <span
-              className="skill"
-              id="javascript"
-              onMouseOver={this.targetBreakfree}
-              onMouseOut={this.untargetBreakfree}
-            >
-              JavaScript
-            </span>
+            {skillsData.map((skill) => (
+              <span
+                key={skill.id}
+                className="skill"
+                id={skill.idName}
+                onMouseOver={this[skill.target]}
+                onMouseOut={this[skill.untarget]}
+              >
+                {skill.skill}
+              </span>
+            ))}
           </div>
         </section>
       </HomeStyled>

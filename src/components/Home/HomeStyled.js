@@ -49,6 +49,9 @@ const HomeStyled = styled.div`
     .skills-wrapper {
       border: 2px solid lightgrey;
       margin: 1em;
+      padding: .5em;
+      display: flex;
+      flex-wrap: nowrap;
     }
     .skill {
       padding: .5em;
