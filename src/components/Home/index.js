@@ -1,6 +1,8 @@
 import React from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
+import projectsData from 'src/assets/data/projectsData';
 import Project from 'src/components/Project';
+import Skill from 'src/components/Skill';
 import HomeStyled from './HomeStyled';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -96,30 +98,23 @@ class Home extends React.Component {
       <HomeStyled>
         <section className="projects-section">
           <div className="projects-wrapper">
-            <Project
-              projectClass="grocereaz"
-              highlightedProject={this.state.grocereazIsHighlighted}
-              projectName="Grocer'eaz"
-            />
-            <Project
-              projectClass="portfolio"
-              highlightedProject={this.state.portfolioIsHighlighted}
-              projectName="This portfolio"
-            />
-            <Project
-              projectClass="breakFree"
-              highlightedProject={this.state.breakFreeIsHighlighted}
-              projectName="Break Free"
-            />
-            <Project
-              projectClass="studyCards"
-              highlightedProject={this.state.studyCardsIsHighlighted}
-              projectName="Study Cards"
-            />
+            {projectsData.map((project) => (
+              <Project
+                key={project.id}
+                projectClass={project.projectClass}
+                highlightedProject={this.state[project.highlightedProject]}
+                projectName={project.projectName}
+              />
+            ))}
           </div>
         </section>
         <section className="skills-section">
           <div className="skills-wrapper">
+            <Skill
+              id="react"
+              skill="React"
+              project="grocereaz"
+            />
             <span
               className="skill"
               id="react"

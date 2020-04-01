@@ -12,6 +12,7 @@ const HomeStyled = styled.div`
     .projects-section {
       width: 60%;
       height: 100%;
+      overflow-x: hidden;
     }
     .projects-wrapper {
       margin: 1em;
