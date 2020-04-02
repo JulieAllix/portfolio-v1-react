@@ -66,6 +66,10 @@ const HeaderStyled = styled.div`
       cursor: pointer;
       font-size: 1.3em;
     }
+    #projects {
+      color: ${theme.colorOne};
+      font-weight: bold;
+    }
     .dropdown {
       position: absolute;
       top: 1.7em;
@@ -75,6 +79,8 @@ const HeaderStyled = styled.div`
       font-size: 1.3em;
       margin-top: .5em;
       margin-left: .3em;
+      color: ${theme.colorOne};
+      font-weight: bold;
     }
 
     .grocereaz {

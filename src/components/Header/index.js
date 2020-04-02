@@ -36,7 +36,7 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
       </div>
 
       <ul className="menu">
-        <li className="menu-link" onClick={handleClick}>Projects</li>
+        <li id="projects" className="menu-link" onClick={handleClick}>Projects</li>
         <ul className="dropdown">
           <Link to="/grocereaz">
             <li

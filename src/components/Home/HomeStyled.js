@@ -41,6 +41,7 @@ const HomeStyled = styled.div`
       font-size: 1.7em;
       font-family: ${theme.titleFont};
       font-weight: bold;
+      color: grey;
     }
     .skills-section {
       width: 40%;
@@ -112,21 +113,33 @@ const HomeStyled = styled.div`
     .grocereaz {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        .project-name {
+          color: white;
+        }
       }
     }
     .breakFree {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        .project-name {
+          color: white;
+        }
       }
     }
     .portfolio {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        .project-name {
+          color: white;
+        }
       }
     }
     .studyCards {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        .project-name {
+          color: white;
+        }
       }
     }
 
