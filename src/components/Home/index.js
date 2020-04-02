@@ -61,6 +61,10 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="skills-section">
+          <div className="skills-intro-wrapper">
+            <span className="skills-intro">Hover the below skills to highlight the project</span>
+            <span className="skills-intro">on which I've put them into practice !</span>
+          </div>
           <div className="skills-wrapper">
             {skillsData.map((skill) => (
               <span

@@ -9,6 +9,7 @@ const HeaderStyled = styled.div`
   height: 10vh;
   width: 100vw;
   border: 1px solid lightgrey;
+  z-index: 2;
 
   .julie {
     font-family: ${theme.julieFont};
