@@ -47,7 +47,7 @@ const HeaderStyled = styled.div`
     display: none;
   }
 
-  @media only screen and (min-width: 650px) {
+  @media only screen and (min-width: 980px) {
     .julie {
       text-align: left;
     }

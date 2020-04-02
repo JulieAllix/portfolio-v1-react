@@ -138,4 +138,10 @@ export default [
     skill: 'Git conflicts',
     project: 'grocereaz',
   },
+  {
+    id: 24,
+    idName: 'responsiveDesign',
+    skill: 'Responsive Design',
+    project: 'grocereaz',
+  },
 ];

@@ -8,39 +8,25 @@ const HomeStyled = styled.div`
   height: 83vh;
   z-index: 1;
 
-  @media only screen and (min-width: 650px) {
+  .skills-section {
+    display: none
+  }
+  .projects-section {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  @media only screen and (min-width: 980px) {
     height: 84vh;
+
     .projects-section {
       width: 60%;
-      height: 100%;
-      overflow-x: hidden;
-    }
-    .projects-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:center;
-    }
-    .project {
-      border: 1px solid lightgrey;
-      background-color: #eee;
-      padding: .5em;
-      height: 370px;
-      width: 340px;
-      margin: 1em 3em;
-    }
-    .project-picture {
-      border: 1px solid lightgrey;
-      background-color: white;
-      height: 300px;
-    }
-    .project-name {
-      width: 100%;
-      text-align: center;
-      padding: .3em;
-      font-size: 1.7em;
-      font-family: ${theme.titleFont};
-      font-weight: bold;
-      color: grey;
     }
     .skills-section {
       width: 40%;
@@ -49,11 +35,12 @@ const HomeStyled = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      overflow-x: hidden;
     }
     .skills-intro-wrapper {
-      margin: 2em;
+      margin: 12em auto 2em;
       padding: .5em;
-      font-size: 1.5em;
+      font-size: 1em;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -109,39 +96,34 @@ const HomeStyled = styled.div`
     }
     #flexbox {
     }
-    .grocereaz {
-      &.highlighted--project{
-        background-color: ${theme.colorOne};
-        .project-name {
-          color: white;
-        }
-      }
-    }
-    .breakFree {
-      &.highlighted--project{
-        background-color: ${theme.colorOne};
-        .project-name {
-          color: white;
-        }
-      }
-    }
-    .portfolio {
-      &.highlighted--project{
-        background-color: ${theme.colorOne};
-        .project-name {
-          color: white;
-        }
-      }
-    }
-    .studyCards {
-      &.highlighted--project{
-        background-color: ${theme.colorOne};
-        .project-name {
-          color: white;
-        }
-      }
-    }
 
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .skills-intro-wrapper {
+      font-size: 1.2em;
+    }
+  }
+
+  @media only screen and (min-width: 1210px) {
+    .skills-intro-wrapper {
+      margin: 10em auto 2em;
+    }
+  }
+
+  @media only screen and (min-width: 1330px) {
+    .skills-intro-wrapper {
+      margin: 6em auto 2em;
+    }
+    .skills-intro-wrapper {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media only screen and (min-width: 1630px) {
+    .skills-intro-wrapper {
+      margin: 4em auto 2em;
+    }
   }
 `;
 
