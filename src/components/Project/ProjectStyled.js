@@ -16,6 +16,11 @@ const ProjectStyled = styled.div`
       border: 1px solid lightgrey;
       background-color: white;
       height: 300px;
+      width: 320px;
+    }
+    .image {
+      height: 300px;
+      width: 320px;
     }
     .project-name {
       width: 100%;

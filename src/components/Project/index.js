@@ -17,7 +17,7 @@ class Project extends React.Component {
           })}
         >
           <div className="project-picture">
-            Picture
+            <img src={this.props.image} alt={this.props.alt} className="image" />
           </div>
           <div className="project-name">{this.props.projectName}</div>
         </div>

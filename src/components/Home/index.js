@@ -56,6 +56,8 @@ class Home extends React.Component {
                 projectClass={project.projectClass}
                 highlightedProject={this.state[project.highlightedProject]}
                 projectName={project.projectName}
+                image={project.image}
+                alt={project.alt}
               />
             ))}
           </div>
