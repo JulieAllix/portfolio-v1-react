@@ -10,13 +10,6 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.highlight = this.highlight.bind(this);
-    this.removeHighlight = this.removeHighlight.bind(this);
-    this.test = this.test.bind(this);
-    this.test2 = this.test2.bind(this);
-    this.targetGrocereaz = this.targetGrocereaz.bind(this);
-    this.targetBreakFree = this.targetBreakFree.bind(this);
-    this.untargetGrocereaz = this.untargetGrocereaz.bind(this);
-    this.untargetBreakFree = this.untargetBreakFree.bind(this);
     this.state = {
       grocereazIsHighlighted: false,
       portfolioIsHighlighted: false,
@@ -25,79 +18,26 @@ class Home extends React.Component {
     };
   }
 
-  targetGrocereaz() {
-    this.highlight('grocereaz');
-  }
-
-  targetBreakFree() {
-    this.highlight('breakFree');
-  }
-
-  untargetGrocereaz() {
-    this.removeHighlight('grocereaz');
-  }
-
-  untargetBreakFree() {
-    this.removeHighlight('breakFree');
-  }
-
-  test(project) {
-    console.log('Hover in');
-    console.log(project);
-  }
-
-  test2(project) {
-    console.log('Hover out');
-    console.log(project);
-  }
-
-  highlight(project) {
+  highlight(project, bool) {
     switch (project) {
       case 'grocereaz':
         this.setState({
-          grocereazIsHighlighted: true,
+          grocereazIsHighlighted: bool,
         });
         break;
       case 'portfolio':
         this.setState({
-          portfolioIsHighlighted: true,
+          portfolioIsHighlighted: bool,
         });
         break;
       case 'breakFree':
         this.setState({
-          breakFreeIsHighlighted: true,
+          breakFreeIsHighlighted: bool,
         });
         break;
       case 'studyCards':
         this.setState({
-          studyCardsIsHighlighted: true,
-        });
-        break;
-      default:
-        break;
-    }
-  }
-
-  removeHighlight(project) {
-    switch (project) {
-      case 'grocereaz':
-        this.setState({
-          grocereazIsHighlighted: false,
-        });
-        break;
-      case 'portfolio':
-        this.setState({
-          portfolioIsHighlighted: false,
-        });
-        break;
-      case 'breakFree':
-        this.setState({
-          breakFreeIsHighlighted: false,
-        });
-        break;
-      case 'studyCards':
-        this.setState({
-          studyCardsIsHighlighted: false,
+          studyCardsIsHighlighted: bool,
         });
         break;
       default:
@@ -128,8 +68,8 @@ class Home extends React.Component {
                 className="skill"
                 id={skill.idName}
                 // onMouseOver={this[skill.target]}
-                onMouseOver={this.test(skill.project)}
-                onMouseOut={this.test2(skill.project)}
+                onMouseOver={this.highlight.bind(this, skill.project, true)}
+                onMouseOut={this.highlight.bind(this, skill.project, false)}
               >
                 {skill.skill}
               </span>
