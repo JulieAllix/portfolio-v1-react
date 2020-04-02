@@ -16,7 +16,7 @@ const HomeStyled = styled.div`
       overflow-x: hidden;
     }
     .projects-wrapper {
-      margin: 1em;
+      margin: .3em;
       display: flex;
       flex-wrap: wrap;
       justify-content:center;
@@ -38,9 +38,9 @@ const HomeStyled = styled.div`
       width: 100%;
       text-align: center;
       padding: .3em;
-      font-size: 1.5em;
+      font-size: 1.7em;
       font-family: ${theme.titleFont};
-      
+      font-weight: bold;
     }
     .skills-section {
       width: 40%;
@@ -60,6 +60,7 @@ const HomeStyled = styled.div`
     }
     .skills-intro {
       overflow: visible;
+      font-family: ${theme.contentFont};
     }
     .skills-wrapper {
       border: 2px solid lightgrey;
@@ -74,6 +75,7 @@ const HomeStyled = styled.div`
       padding: .5em;
       z-index: 1;
       font-size: 1.2em;
+      font-family: ${theme.contentFont};
       cursor: pointer;
     }
     #react {
@@ -105,24 +107,26 @@ const HomeStyled = styled.div`
     #gitConflicts {
       font-size: 1.5em;
     }
+    #flexbox {
+    }
     .grocereaz {
       &.highlighted--project{
-        background-color: yellow;
+        background-color: ${theme.colorOne};
       }
     }
     .breakFree {
       &.highlighted--project{
-        background-color: yellow;
+        background-color: ${theme.colorOne};
       }
     }
     .portfolio {
       &.highlighted--project{
-        background-color: yellow;
+        background-color: ${theme.colorOne};
       }
     }
     .studyCards {
       &.highlighted--project{
-        background-color: yellow;
+        background-color: ${theme.colorOne};
       }
     }
 

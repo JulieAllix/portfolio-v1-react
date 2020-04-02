@@ -24,9 +24,9 @@ export default [
     project: 'grocereaz',
   },
   {
-    id: 5,
-    idName: 'redux',
-    skill: 'Redux',
+    id: 9,
+    idName: 'agileMethod',
+    skill: 'Agile Method',
     project: 'grocereaz',
   },
   {
@@ -47,17 +47,18 @@ export default [
     skill: '2D Animation',
     project: 'breakFree',
   },
-  {
-    id: 9,
-    idName: 'agileMethod',
-    skill: 'Agile Method',
-    project: 'grocereaz',
-  },
+
   {
     id: 10,
     idName: 'sql',
     skill: 'SQL',
     project: 'breakFree',
+  },
+  {
+    id: 5,
+    idName: 'redux',
+    skill: 'Redux',
+    project: 'grocereaz',
   },
   {
     id: 11,

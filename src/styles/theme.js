@@ -6,9 +6,17 @@ export const darken = (color, percent) => tinycolor(color).darken(percent).toStr
 const theme = {
   colorOne: '#d54d62',
   colorTwo: '#5bb371',
+  reactColor: '#00d8ff',
+  softSkillsColor: '#764abc',
+  axiosColor: '#029ae1',
+  javaScriptColor: '#f0d91d',
   julieFont: 'Lobster',
   contentFont: 'Lato',
-  titleFont: 'Cabin',
+  titleFont: 'Shadows Into Light Two',
+  /*
+  'Loved by the King'
+  'Handlee'
+  */
 };
 
 export default theme;
