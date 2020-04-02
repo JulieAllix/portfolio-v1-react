@@ -4,6 +4,12 @@ import theme from 'src/styles/theme';
 const ProjectStyled = styled.div`
 
   @media only screen and (min-width: 650px) {
+    transition: .6s;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: .6s;
+    }
     .project {
       border: 1px solid lightgrey;
       background-color: #eee;

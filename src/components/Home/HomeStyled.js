@@ -16,7 +16,6 @@ const HomeStyled = styled.div`
       overflow-x: hidden;
     }
     .projects-wrapper {
-      margin: .3em;
       display: flex;
       flex-wrap: wrap;
       justify-content:center;

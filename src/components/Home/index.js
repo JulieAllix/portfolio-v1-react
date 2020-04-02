@@ -1,5 +1,5 @@
 import React from 'react';
-// import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 import projectsData from 'src/assets/data/projectsData';
 import skillsData from 'src/assets/data/skillsData';
 import Project from 'src/components/Project';
@@ -51,14 +51,16 @@ class Home extends React.Component {
         <section className="projects-section">
           <div className="projects-wrapper">
             {projectsData.map((project) => (
-              <Project
-                key={project.id}
-                projectClass={project.projectClass}
-                highlightedProject={this.state[project.highlightedProject]}
-                projectName={project.projectName}
-                image={project.image}
-                alt={project.alt}
-              />
+              <Link to={project.projectClass}>
+                <Project
+                  key={project.id}
+                  projectClass={project.projectClass}
+                  highlightedProject={this.state[project.highlightedProject]}
+                  projectName={project.projectName}
+                  image={project.image}
+                  alt={project.alt}
+                />
+              </Link>
             ))}
           </div>
         </section>
