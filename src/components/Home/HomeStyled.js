@@ -51,10 +51,11 @@ const HomeStyled = styled.div`
       margin: 1em;
       padding: .5em;
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
     .skill {
       padding: .5em;
+      z-index: 1;
     }
     .grocereaz {
       &.highlighted--project{
@@ -62,6 +63,16 @@ const HomeStyled = styled.div`
       }
     }
     .breakFree {
+      &.highlighted--project{
+        background-color: yellow;
+      }
+    }
+    .portfolio {
+      &.highlighted--project{
+        background-color: yellow;
+      }
+    }
+    .studyCards {
       &.highlighted--project{
         background-color: yellow;
       }

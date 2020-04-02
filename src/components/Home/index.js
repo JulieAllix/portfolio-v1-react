@@ -67,7 +67,6 @@ class Home extends React.Component {
                 key={skill.id}
                 className="skill"
                 id={skill.idName}
-                // onMouseOver={this[skill.target]}
                 onMouseOver={this.highlight.bind(this, skill.project, true)}
                 onMouseOut={this.highlight.bind(this, skill.project, false)}
               >
