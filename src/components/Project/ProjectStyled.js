@@ -38,6 +38,7 @@ const ProjectStyled = styled.div`
     .grocereaz {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        border: 2px solid ${theme.colorOne};
         .project-name {
           color: white;
         }
@@ -46,6 +47,7 @@ const ProjectStyled = styled.div`
     .breakFree {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        border: 2px solid ${theme.colorOne};
         .project-name {
           color: white;
         }
@@ -54,6 +56,7 @@ const ProjectStyled = styled.div`
     .portfolio {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        border: 2px solid ${theme.colorOne};
         .project-name {
           color: white;
         }
@@ -62,6 +65,7 @@ const ProjectStyled = styled.div`
     .studyCards {
       &.highlighted--project{
         background-color: ${theme.colorOne};
+        border: 2px solid ${theme.colorOne};
         .project-name {
           color: white;
         }

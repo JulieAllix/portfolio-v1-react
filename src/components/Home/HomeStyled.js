@@ -4,11 +4,13 @@ import theme from 'src/styles/theme';
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 import wood from 'src/assets/images/wood.jpg';
 
+/*
 import zebra from 'src/assets/images/zebra.jpg';
 import pineapple2 from 'src/assets/images/pineapple-2.jpg';
 import ice from 'src/assets/images/ice.jpg';
 import wall from 'src/assets/images/wall.jpg';
 import polygon from 'src/assets/images/polygon.jpg';
+*/
 
 const HomeStyled = styled.div`
   display: flex;

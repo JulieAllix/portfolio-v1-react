@@ -79,9 +79,10 @@ const HeaderStyled = styled.div`
     }
     .dropdown-item {
       font-size: 1.3em;
-      margin-top: 1em;
       margin-left: .3em;
       color: ${theme.colorOne};
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: .5em;
       font-weight: bold;
     }
 
