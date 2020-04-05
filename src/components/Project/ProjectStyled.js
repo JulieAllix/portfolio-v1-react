@@ -9,7 +9,7 @@ const ProjectStyled = styled.div`
       transition: .6s;
     }
     .project {
-      border: 1px solid lightgrey;
+      border: 2px solid lightgrey;
       background-color: #eee;
       padding: .5em;
       height: 470px;
@@ -32,7 +32,7 @@ const ProjectStyled = styled.div`
       padding: .7em;
       font-size: 2em;
       font-family: ${theme.titleFont};
-      color: grey;
+      color: ${theme.colorTwo};
       font-weight: bold;
     }
     .grocereaz {

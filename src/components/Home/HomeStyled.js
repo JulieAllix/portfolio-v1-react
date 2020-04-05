@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
 
+import pineapple1 from 'src/assets/images/pineapple-1.jpg';
+import wood from 'src/assets/images/wood.jpg';
+
+import zebra from 'src/assets/images/zebra.jpg';
+import pineapple2 from 'src/assets/images/pineapple-2.jpg';
+import ice from 'src/assets/images/ice.jpg';
+import wall from 'src/assets/images/wall.jpg';
+import polygon from 'src/assets/images/polygon.jpg';
+
 const HomeStyled = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,6 +24,7 @@ const HomeStyled = styled.div`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    background-image: url(${pineapple1});
   }
   .projects-wrapper {
     display: flex;
@@ -36,23 +46,28 @@ const HomeStyled = styled.div`
       flex-direction: column;
       justify-content: center;
       overflow-x: hidden;
+      background-image: url(${wood});
+      background-position: center;
+      background-repeat: no-repeat;
     }
     .skills-intro-wrapper {
-      margin: 12em auto 2em;
+      margin: 12em 0 2em;
       padding: .5em;
       font-size: 1em;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.9);
     }
     .skills-intro {
       overflow: visible;
       font-family: ${theme.contentFont};
-      margin-bottom: 1em;
+      color: ${theme.colorOne};
+      font-weight: bold;
+      margin: .5em auto;
     }
     .skills-wrapper {
-      border: 2px solid lightgrey;
-      margin: 1em;
+      background-color: rgba(255, 255, 255, 0.9);
       padding: .5em;
       display: flex;
       flex-wrap: wrap;
@@ -65,6 +80,9 @@ const HomeStyled = styled.div`
       font-size: 1.2em;
       font-family: ${theme.contentFont};
       cursor: pointer;
+      &:hover {
+        color: ${theme.colorOne};
+      }
     }
     #react {
       font-size: 2em;
@@ -108,13 +126,13 @@ const HomeStyled = styled.div`
 
   @media only screen and (min-width: 1210px) {
     .skills-intro-wrapper {
-      margin: 10em auto 2em;
+      margin: 10em 0 2em;
     }
   }
 
   @media only screen and (min-width: 1330px) {
     .skills-intro-wrapper {
-      margin: 6em auto 2em;
+      margin: 6em 0 2em;
     }
     .skills-intro-wrapper {
       font-size: 1.5em;
@@ -123,7 +141,7 @@ const HomeStyled = styled.div`
   
   @media only screen and (min-width: 1630px) {
     .skills-intro-wrapper {
-      margin: 4em auto 2em;
+      margin: 4em 0 2em;
     }
   }
 `;
