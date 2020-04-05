@@ -8,22 +8,22 @@ const Footer = () => (
   <FooterStyled>
     <div className="github footer-icon">
       <a href="https://github.com/JulieAllix">
-        <Icon name="github" size="big" color="grey" />
+        <Icon name="github" size="big" color="white" classname="icon-link" />
       </a>
     </div>
     <div className="contact footer-icon">
       <Link to="/contact">
-        <Icon name="mail" size="big" color="grey" />
+        <Icon name="mail" size="big" color="white" classname="icon-link" />
       </Link>
     </div>
     <div className="linkedIn footer-icon">
       <a href="https://www.linkedin.com/in/julieallix">
-        <Icon name="linkedin" size="big" color="grey" />
+        <Icon name="linkedin" size="big" color="white" classname="icon-link" />
       </a>
     </div>
     <div className="wordPress footer-icon">
       <a href="https://julieallix.wordpress.com/">
-        <Icon name="wordpress" size="big" color="grey" />
+        <Icon name="wordpress" size="big" color="white" classname="icon-link" />
       </a>
     </div>
   </FooterStyled>
