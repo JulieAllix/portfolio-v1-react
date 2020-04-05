@@ -67,6 +67,9 @@ const HeaderStyled = styled.div`
       cursor: pointer;
       font-size: 1.3em;
       color: ${theme.basicColor};
+      &:hover {
+        color: ${theme.colorOne};
+      }
     }
     #projects {
       color: ${theme.colorOne};
