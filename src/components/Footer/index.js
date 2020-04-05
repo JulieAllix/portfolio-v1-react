@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
 
 import FooterStyled from './FooterStyled';
@@ -6,16 +7,24 @@ import FooterStyled from './FooterStyled';
 const Footer = () => (
   <FooterStyled>
     <div className="github footer-icon">
-      <Icon name="github" size="big" color="grey" />
+      <a href="https://github.com/JulieAllix">
+        <Icon name="github" size="big" color="grey" />
+      </a>
     </div>
     <div className="contact footer-icon">
-      <Icon name="mail" size="big" color="grey" />
+      <Link to="/contact">
+        <Icon name="mail" size="big" color="grey" />
+      </Link>
     </div>
     <div className="linkedIn footer-icon">
-      <Icon name="linkedin" size="big" color="grey" />
+      <a href="https://www.linkedin.com/in/julieallix">
+        <Icon name="linkedin" size="big" color="grey" />
+      </a>
     </div>
     <div className="wordPress footer-icon">
-      <Icon name="wordpress" size="big" color="grey" />
+      <a href="https://julieallix.wordpress.com/">
+        <Icon name="wordpress" size="big" color="grey" />
+      </a>
     </div>
   </FooterStyled>
 );
