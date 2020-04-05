@@ -23,8 +23,8 @@ const ProjectStyled = styled.div`
       width: 430px;
     }
     .image {
-      height: 400px;
-      width: 430px;
+      height: 398px;
+      width: 428px;
     }
     .project-name {
       width: 100%;
@@ -40,7 +40,10 @@ const ProjectStyled = styled.div`
         background-color: ${theme.colorOne};
         border: 2px solid ${theme.colorOne};
         .project-name {
-          color: white;
+          color: #eee;
+        }
+        .project-picture {
+          border: 1px solid ${theme.colorOne};;
         }
       }
     }
@@ -49,7 +52,10 @@ const ProjectStyled = styled.div`
         background-color: ${theme.colorOne};
         border: 2px solid ${theme.colorOne};
         .project-name {
-          color: white;
+          color: #eee;
+        }
+        .project-picture {
+          border: 1px solid ${theme.colorOne};;
         }
       }
     }
@@ -58,7 +64,10 @@ const ProjectStyled = styled.div`
         background-color: ${theme.colorOne};
         border: 2px solid ${theme.colorOne};
         .project-name {
-          color: white;
+          color: #eee;
+        }
+        .project-picture {
+          border: 1px solid ${theme.colorOne};;
         }
       }
     }
@@ -67,7 +76,10 @@ const ProjectStyled = styled.div`
         background-color: ${theme.colorOne};
         border: 2px solid ${theme.colorOne};
         .project-name {
-          color: white;
+          color: #eee;
+        }
+        .project-picture {
+          border: 1px solid ${theme.colorOne};;
         }
       }
     }
@@ -82,8 +94,8 @@ const ProjectStyled = styled.div`
         width: 320px;
       }
       .image {
-        height: 300px;
-        width: 320px;
+        height: 298px;
+        width: 318px;
       }
   }
 `;
