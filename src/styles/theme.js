@@ -4,6 +4,7 @@ export const lighten = (color, percent) => tinycolor(color).lighten(percent).toS
 export const darken = (color, percent) => tinycolor(color).darken(percent).toString();
 
 const theme = {
+  basicColor: 'black',
   colorOne: '#d54d62',
   colorTwo: '#5bb371',
   reactColor: '#00d8ff',

@@ -42,6 +42,7 @@ const HeaderStyled = styled.div`
     margin-top: .5em;
     font-family: ${theme.contentFont};
     font-weight: bold;
+    color: ${theme.basicColor};
   }
   .menu {
     display: none;
@@ -65,6 +66,7 @@ const HeaderStyled = styled.div`
       margin: auto .5em;
       cursor: pointer;
       font-size: 1.3em;
+      color: ${theme.basicColor};
     }
     #projects {
       color: ${theme.colorOne};
@@ -77,7 +79,7 @@ const HeaderStyled = styled.div`
     }
     .dropdown-item {
       font-size: 1.3em;
-      margin-top: .5em;
+      margin-top: 1em;
       margin-left: .3em;
       color: ${theme.colorOne};
       font-weight: bold;

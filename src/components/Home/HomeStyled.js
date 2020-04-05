@@ -48,6 +48,7 @@ const HomeStyled = styled.div`
     .skills-intro {
       overflow: visible;
       font-family: ${theme.contentFont};
+      margin-bottom: 1em;
     }
     .skills-wrapper {
       border: 2px solid lightgrey;

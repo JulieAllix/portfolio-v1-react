@@ -29,10 +29,11 @@ const ProjectStyled = styled.div`
     .project-name {
       width: 100%;
       text-align: center;
-      padding: .3em;
-      font-size: 1.5em;
+      padding: .7em;
+      font-size: 2em;
       font-family: ${theme.titleFont};
-      
+      color: grey;
+      font-weight: bold;
     }
     .grocereaz {
       &.highlighted--project{
