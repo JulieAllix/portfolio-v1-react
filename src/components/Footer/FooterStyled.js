@@ -16,7 +16,7 @@ const FooterStyled = styled.div`
   a {
     color: white;
     &:hover {
-      color: ${theme.colorTwo};
+      color: ${theme.colorThree};
     }
   }
 

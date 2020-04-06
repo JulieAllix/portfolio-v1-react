@@ -7,6 +7,7 @@ const theme = {
   basicColor: 'black',
   colorOne: '#d54d62',
   colorTwo: '#82957f',
+  colorThree: '#fbbd08',
   reactColor: '#00d8ff',
   softSkillsColor: '#764abc',
   axiosColor: '#029ae1',
