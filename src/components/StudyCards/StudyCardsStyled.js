@@ -24,6 +24,7 @@ const StudyCardsStyled = styled.div`
   .presentation-section {
     width: 100%;
     height: 100%;
+    background-image: url(${pineapple1});
     overflow-x: hidden;
       ::-webkit-scrollbar {
         width: 15px;
@@ -53,15 +54,18 @@ const StudyCardsStyled = styled.div`
     width: 100vw;
     padding: .5em;
     background-color: rgba(255, 255, 255, 0.9);
-    color: ${theme.colorOne};
+    color: ${theme.colorTwo};
     font-family: ${theme.titleFont};
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
   }
-  .presentation-mobile-wrapper {
+  .presentation-wrapper {
     width: 100vw;
     padding: 1em;
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .presentation-part {
     margin: 2em auto 3em;
@@ -86,6 +90,10 @@ const StudyCardsStyled = styled.div`
     margin-left: .5em;
     margin-bottom: .5em;
   }
+  .skill {
+    margin-left: .7em;
+    font-weight: bold;
+  }
   .buttons {
     display: flex;
     flex-direction: column;
@@ -94,10 +102,12 @@ const StudyCardsStyled = styled.div`
   .project-button {
     padding: .5em;
     background: none;
+    background-color: rgba(255, 255, 255, 0.8);
     color: ${theme.colorOne};
     font-family: ${theme.contentFont};
     font-size: 1.5em;
-    border: 1px solid ${theme.colorOne};
+    font-weight: bold;
+    border: 2px solid ${theme.colorOne};
     border-radius: 5px;
     margin-top: .5em;
     text-align: center;
@@ -118,7 +128,6 @@ const StudyCardsStyled = styled.div`
       background-image: url(${wall});
     }
     .picture-desktop-wrapper {
-      position: relative;
       margin: 0 auto;
       border: 2px solid lightgrey;
       background-color: #eee;
@@ -132,6 +141,13 @@ const StudyCardsStyled = styled.div`
       height: 398px;
       width: 428px;
     }
+    .project-name {
+      text-align: center;
+      color: ${theme.colorTwo};
+      font-family: ${theme.titleFont};
+      font-size: 2.5em;
+      margin-top: 0;
+    }
     .presentation-section {
       width: 60vw;
       background-image: url(${pineapple1});
@@ -139,12 +155,14 @@ const StudyCardsStyled = styled.div`
     .picture-mobile-wrapper {
       display: none;
     }
-    .presentation-mobile-wrapper {
+    .presentation-wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
+      height: 100%;
       padding: 0;
+      background-color: rgba(255, 255, 255, 0.3);
     }
     .presentation-part {
       width: 25vw;
@@ -152,6 +170,7 @@ const StudyCardsStyled = styled.div`
     }
     .presentation-section-title {
       width: 100%;
+      color: ${theme.colorTwo};
     }
     .project-paragraph {
       width: 100%;

@@ -15,6 +15,7 @@ class StudyCards extends React.Component {
               alt="My first personal project: Study Cards"
               className="picture-desktop"
             />
+            <h2 className="project-name">Study Cards</h2>
           </div>
         </section>
         <section className="presentation-section">
@@ -28,7 +29,7 @@ class StudyCards extends React.Component {
               Study Cards
             </div>
           </div>
-          <div className="presentation-mobile-wrapper">
+          <div className="presentation-wrapper">
             <div className="presentation-part">
               <h2 className="presentation-section-title">About</h2>
               <p className="project-paragraph">
@@ -48,16 +49,16 @@ class StudyCards extends React.Component {
               <h2 className="presentation-section-title">Concepts / Skills used</h2>
               <ul className="u-list">
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  HTML
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">HTML</span>
                 </li>
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  CSS
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">CSS</span>
                 </li>
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  Flexbox
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">Flexbox</span>
                 </li>
               </ul>
             </div>
@@ -65,16 +66,16 @@ class StudyCards extends React.Component {
               <h2 className="presentation-section-title">New concepts discovered</h2>
               <ul className="u-list">
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  CSS variables
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">CSS variables</span>
                 </li>
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  Theme switch
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">Theme switch</span>
                 </li>
                 <li className="list-element">
-                  <Icon name="check circle" size="small" color="grey" />
-                  Toggle switch
+                  <Icon name="check circle" size="small" color="yellow" />
+                  <span className="skill">Toggle switch</span>
                 </li>
               </ul>
             </div>
