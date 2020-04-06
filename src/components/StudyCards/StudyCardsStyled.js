@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
+import wall from 'src/assets/images/wall.jpg';
 /*
-
-
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 import wood from 'src/assets/images/wood.jpg';
-
-/*
 import zebra from 'src/assets/images/zebra.jpg';
 import pineapple2 from 'src/assets/images/pineapple-2.jpg';
 import ice from 'src/assets/images/ice.jpg';
-import wall from 'src/assets/images/wall.jpg';
 import polygon from 'src/assets/images/polygon.jpg';
 */
 
@@ -72,7 +68,7 @@ const StudyCardsStyled = styled.div`
   .presentation-section-title {
     font-family: ${theme.titleFont};
     width: 90vw;
-    text-align: center;
+    margin-left: 1.5em;
     font-size: 1.8em;
     margin-bottom: 1.5em;
   }
@@ -114,15 +110,53 @@ const StudyCardsStyled = styled.div`
     height: 84vh;
     .picture-section {
       display: flex;
+      align-items: center;
+      width: 40vw;
+      height: 84vh;
+      border-right: 2px solid grey;
+      background-image: url(${wall});
     }
-    .picture-mobile {
-      display: none;
+    .picture-desktop-wrapper {
+      position: relative;
+      margin: 0 auto;
+      border: 2px solid lightgrey;
+      background-color: #eee;
+      padding: .5em;
+      height: 470px;
+      width: 450px;
+      transform: rotate(2deg);
     }
-    .mobile-project-name {
+    .picture-desktop {
+      border: 2px solid lightgrey;
+      height: 398px;
+      width: 428px;
+    }
+    .presentation-section {
+      width: 60vw;
+    }
+    .picture-mobile-wrapper {
       display: none;
     }
     .presentation-mobile-wrapper {
-      display: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+    }
+    .presentation-part {
+      width: 25vw;
+      white-space: normal;
+    }
+    .presentation-section-title {
+      width: 100%;
+    }
+    .project-paragraph {
+      width: 100%;
+    }
+    .buttons {
+      width: 30vw;
+      margin: 3em auto 0;
     }
   }
 

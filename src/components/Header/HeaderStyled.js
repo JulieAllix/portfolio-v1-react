@@ -43,7 +43,7 @@ const HeaderStyled = styled.div`
     margin-top: .5em;
     font-family: ${theme.contentFont};
     font-weight: bold;
-    color: ${theme.basicColor};
+    color: ${theme.colorOne};
   }
   .menu {
     display: none;

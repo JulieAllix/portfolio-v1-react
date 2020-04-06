@@ -9,7 +9,13 @@ class StudyCards extends React.Component {
     return (
       <StudyCardsStyled>
         <section className="picture-section">
-          Picture
+          <div className="picture-desktop-wrapper">
+            <img
+              src={studyCards}
+              alt="My first personal project: Study Cards"
+              className="picture-desktop"
+            />
+          </div>
         </section>
         <section className="presentation-section">
           <div className="picture-mobile-wrapper">
