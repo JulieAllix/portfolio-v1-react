@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
 import wall from 'src/assets/images/wall.jpg';
+import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 /*
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 import wood from 'src/assets/images/wood.jpg';
@@ -113,7 +114,7 @@ const StudyCardsStyled = styled.div`
       align-items: center;
       width: 40vw;
       height: 84vh;
-      border-right: 2px solid grey;
+      border-right: 2px solid lightgrey;
       background-image: url(${wall});
     }
     .picture-desktop-wrapper {
@@ -133,6 +134,7 @@ const StudyCardsStyled = styled.div`
     }
     .presentation-section {
       width: 60vw;
+      background-image: url(${pineapple1});
     }
     .picture-mobile-wrapper {
       display: none;
