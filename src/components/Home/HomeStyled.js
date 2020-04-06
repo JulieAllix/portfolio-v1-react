@@ -59,6 +59,7 @@ const HomeStyled = styled.div`
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      white-space: normal;
       background-color: rgba(255, 255, 255, 0.9);
     }
     .skills-intro {
@@ -67,6 +68,8 @@ const HomeStyled = styled.div`
       color: ${theme.colorOne};
       font-weight: bold;
       margin: .5em auto;
+      line-height: 2em;
+      text-align: center;
     }
     .skills-wrapper {
       background-color: rgba(255, 255, 255, 0.9);

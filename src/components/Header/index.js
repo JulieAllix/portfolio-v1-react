@@ -12,7 +12,7 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
   };
   return (
     <HeaderStyled>
-      <div className="julie">Julie Allix</div>
+      <h1 className="julie">Julie Allix</h1>
       <div className="burger-menu">
         <div className="burger-menu-icon">
           <Icon name="bars" size="big" color="grey" onClick={handleClick} />

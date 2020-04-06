@@ -14,6 +14,7 @@ const HeaderStyled = styled.div`
   .julie {
     font-family: ${theme.julieFont};
     font-size: 2.3em;
+    font-weight: normal;
     margin: auto .5em;
     color: ${theme.colorOne};
     width: 100%;

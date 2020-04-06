@@ -7,6 +7,7 @@ export default [
   {
     id: 1,
     projectClass: 'grocereaz',
+    slug: 'grocereaz',
     highlightedProject: 'grocereazIsHighlighted',
     projectName: 'Grocer\'eaz',
     image: grocereaz,
@@ -15,6 +16,7 @@ export default [
   {
     id: 2,
     projectClass: 'breakFree',
+    slug: 'break-free',
     highlightedProject: 'breakFreeIsHighlighted',
     projectName: 'Break Free',
     image: breakFree,
@@ -23,6 +25,7 @@ export default [
   {
     id: 3,
     projectClass: 'portfolio',
+    slug: 'portfolio',
     highlightedProject: 'portfolioIsHighlighted',
     projectName: 'This portfolio',
     image: portfolio,
@@ -31,6 +34,7 @@ export default [
   {
     id: 4,
     projectClass: 'studyCards',
+    slug: 'study-cards',
     highlightedProject: 'studyCardsIsHighlighted',
     projectName: 'Study Cards',
     image: studyCards,
