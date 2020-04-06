@@ -18,20 +18,34 @@ const StudyCardsStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 83vh;
   z-index: 1;
-  overflow-x: hidden;
+  height: 83vh;
+
   .picture-section {
     display: none;
   }
+  .presentation-section {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+      ::-webkit-scrollbar-track {
+        /*box-shadow: inset 0 0 5px grey;*/
+        background: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: ${theme.colorOne};
+      }
+  }
   .picture-mobile-wrapper {
-      border: 1px solid lightgrey;
-      background-color: white;
-      height: 400px;
-      width: 430px;
-      margin-top: 0;
-      position: relative;
-    }
+    border: 1px solid lightgrey;
+    background-color: white;
+    height: 400px;
+    width: 430px;
+    position: relative;
+  }
   .picture-mobile {
     height: 398px;
     width: 428px;
@@ -52,10 +66,50 @@ const StudyCardsStyled = styled.div`
     width: 100vw;
     padding: 1em;
   }
-  .project-paragraph {
-    width: 95vw;
-    white-space: normal;
+  .presentation-part {
+    margin: 2em auto 3em;
   }
+  .presentation-section-title {
+    font-family: ${theme.titleFont};
+    width: 90vw;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+  }
+  .project-paragraph {
+    width: 90vw;
+    white-space: normal;
+    font-family: ${theme.contentFont};
+    font-size: 1.3em;
+    text-align: justify;
+  }
+  .list-element {
+    font-family: ${theme.contentFont};
+    font-size: 1.3em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .project-button {
+    padding: .5em;
+    background: none;
+    color: ${theme.colorOne};
+    font-family: ${theme.contentFont};
+    font-size: 1.5em;
+    border: 1px solid ${theme.colorOne};
+    border-radius: 5px;
+    margin-top: .5em;
+    text-align: center;
+    &:hover {
+      background-color: ${theme.colorOne};
+      color: white;
+    }
+  }
+
   @media only screen and (min-width: 980px) {
     height: 84vh;
     .picture-section {
