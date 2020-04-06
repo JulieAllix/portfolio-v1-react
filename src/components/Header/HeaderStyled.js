@@ -79,7 +79,7 @@ const HeaderStyled = styled.div`
     .dropdown {
       position: absolute;
       top: 1.7em;
-      left: .2em;
+      left: 0;
     }
     .dropdown-item {
       font-size: 1.3em;
@@ -88,6 +88,10 @@ const HeaderStyled = styled.div`
       background-color: rgba(255, 255, 255, 0.9);
       padding: .5em;
       font-weight: bold;
+      &:hover {
+        color: white;
+        background-color: ${theme.colorOne};
+      }
     }
 
     .grocereaz {
