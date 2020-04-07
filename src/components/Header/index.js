@@ -62,6 +62,18 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
               Break Free
             </li>
           </Link>
+          <Link to="/portfolio">
+            <li
+              className={classNames({
+                'menu--open': menuIsOpen,
+                'dropdown-item': true,
+                portfolio: true,
+              })}
+              onClick={handleClick}
+            >
+              Portfolio
+            </li>
+          </Link>
           <Link to="/study-cards">
             <li
               className={classNames({

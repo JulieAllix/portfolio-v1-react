@@ -110,9 +110,17 @@ const HeaderStyled = styled.div`
         transform: translateX(0);
       }
     }
-    .study-cards {
+    .portfolio {
       transform: translateX(1000px);
       transition: .8s;
+      &.menu--open{
+        display: flex;
+        transform: translateX(0);
+      }
+    }
+    .study-cards {
+      transform: translateX(1000px);
+      transition: .9s;
       &.menu--open{
         display: flex;
         transform: translateX(0);
