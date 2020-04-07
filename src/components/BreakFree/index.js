@@ -37,7 +37,7 @@ class BreakFree extends React.Component {
               <div className="presentation-part">
                 <h2 className="presentation-section-title">About</h2>
                 <p className="project-paragraph">
-                  {project.about}
+                  <div dangerouslySetInnerHTML={ {__html: project.about } }/>
                 </p>
               </div>
               <div className="presentation-part">
