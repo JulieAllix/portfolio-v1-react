@@ -3,7 +3,7 @@ import theme from 'src/styles/theme';
 import wall from 'src/assets/images/wall.jpg';
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 
-const StudyCardsStyled = styled.div`
+const ProjectPresentationStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -260,4 +260,4 @@ const StudyCardsStyled = styled.div`
 
 `;
 
-export default StudyCardsStyled;
+export default ProjectPresentationStyled;

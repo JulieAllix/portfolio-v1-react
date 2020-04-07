@@ -39,5 +39,11 @@ export default [
     projectName: 'Study Cards',
     image: studyCards,
     alt: 'My first personal project: Study Cards',
+    about: 'The aim of this project was to help me learning the basics of html and css by mixing theory and practice. Those are study cards where I can find useful tips I learned in class (theory) in the shape of a website (practice). I added a toggle switch giving the opportunity to the user to choose between two themes.',
+    timing: 'This was my first personal project. I worked on it during the very first weeks of my training (October 2019), and progressively updated it with the new knowledge I acquired.',
+    skillsUsed: ['HTML', 'CSS', 'Flexbox'],
+    skillsDiscovered: ['CSS variables', 'Theme switch'],
+    projectUrl: '',
+    gitHubUrl: 'https://github.com/JulieAllix/fiche-revisions-oclock',
   },
 ];
