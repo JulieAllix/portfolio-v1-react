@@ -64,6 +64,22 @@ const OtherPagesStyled = styled.div`
     font-size: 1.8em;
     white-space: normal;
   }
+  .icon-wrapper-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: .5em;
+  }
+  .icon-wrapper-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .5em;
+  }
+  .presentation-paragraph-about {
+    width: 90%;
+    margin: 0 auto;
+  }
   .presentation-section-title-wrapper {
     display: flex;
     justify-content: center;
@@ -73,6 +89,13 @@ const OtherPagesStyled = styled.div`
     font-family: ${theme.titleFont};
     width: 100%;
     margin: 1em;
+    font-size: 1.4em;
+    white-space: normal;
+  }
+  .presentation-section-title-about {
+    font-family: ${theme.titleFont};
+    width: 100%;
+    margin: 0;
     font-size: 1.4em;
     white-space: normal;
   }
@@ -93,6 +116,7 @@ const OtherPagesStyled = styled.div`
     width: 100%;
   }
   .button {
+    width: 100%;
     padding: .5em;
     background: none;
     background-color: rgba(255, 255, 255, 0.8);
@@ -105,6 +129,7 @@ const OtherPagesStyled = styled.div`
     margin-top: .5em;
     text-align: center;
     white-space: normal;
+    line-height: 1.5em;
     &:hover {
       background-color: ${theme.colorOne};
       color: white;
@@ -169,7 +194,6 @@ const OtherPagesStyled = styled.div`
     .presentation-wrapper {
       display: flex;
       flex-direction: column;
-      width: 100%;
       height: 100%;
       padding: 0;
     }

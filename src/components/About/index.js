@@ -3,10 +3,10 @@ import { Icon } from 'semantic-ui-react';
 import otherData from 'src/assets/data/otherData';
 import OtherPagesStyled from 'src/components/OtherPagesStyled';
 
-const data = otherData[0];
+const data = otherData[1];
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Oclock extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <OtherPagesStyled>
@@ -24,11 +24,13 @@ class Oclock extends React.Component {
                 <h1 className="presentation-title">
                   {data.title}
                 </h1>
+                <div className="icon-wrapper-left">
+                  <Icon name="quote left" size="big" color="grey" />
+                </div>
                 {data.content.map((dataBlock) => (
-                  <div key={dataBlock.id} className="presentation-paragraph">
+                  <div key={dataBlock.id} className="presentation-paragraph-about">
                     <div className="presentation-section-title-wrapper">
-                      <Icon name={dataBlock.icon} size="big" color="black" />
-                      <h2 className="presentation-section-title">{dataBlock.title}</h2>
+                      <h2 className="presentation-section-title-about">{dataBlock.title}</h2>
                     </div>
                     {dataBlock.paragraphs.map((dataParagraph) => (
                       <p key={dataParagraph.id} className="data-paragraph">
@@ -37,6 +39,9 @@ class Oclock extends React.Component {
                     ))}
                   </div>
                 ))}
+                <div className="icon-wrapper-right">
+                  <Icon name="quote right" size="big" color="grey" />
+                </div>
               </div>
               <div className="buttons">
                 <a href={data.url} className="button" type="button">
@@ -61,4 +66,4 @@ class Oclock extends React.Component {
   }
 }
 
-export default Oclock;
+export default About;

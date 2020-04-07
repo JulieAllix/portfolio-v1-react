@@ -1,4 +1,5 @@
 import oclock from 'src/assets/images/oclock.png';
+import julie from 'src/assets/images/julie.jpg';
 
 export default [
   {
@@ -6,8 +7,8 @@ export default [
     image: oclock,
     alt: 'Logo of O\'clock, the school where I did my bootcamp',
     title: 'About my training @ O\'clock',
-    about: '',
     url: 'https://oclock.io/',
+    buttonContent: 'Learn more about this training (FR)',
     content: [
       {
         id: 1,
@@ -31,7 +32,7 @@ export default [
           },
           {
             id: 2,
-            text: 'The training I\'m in is based of three months for learning the basics to become a web developer (<em>html, css, php, js, sql</em>), then one month of specialization (<em>Symfony, React, or Wordpress</em>). And then one month of full-time team-project (the "Apotheosis").',
+            text: 'The training I was in is based of three months for learning the basics to become a web developer (<em>html, css, php, js, sql</em>), then one month of specialization (<em>Symfony, React, or Wordpress</em>). And then one month of full-time team-project (the "Apotheosis").',
           },
           {
             id: 3,
@@ -55,6 +56,39 @@ export default [
           {
             id: 3,
             text: 'And as mentioned above, the training ends with one month of <em>full-time project in teams</em>, in autonomy, to experiment the real work conditions.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    image: julie,
+    alt: 'Julie Allix',
+    title: 'About me',
+    url: 'https://julieallix.wordpress.com/',
+    buttonContent: 'Feel free to checkout my Wordpress if you are curious about my Photoshop and sewing creations !',
+    content: [
+      {
+        id: 1,
+        title: '',
+        icon: 'computer',
+        paragraphs: [
+          {
+            id: 1,
+            text: 'Hello, my name is Julie and I\'m a French Web Developer. I love all kind of <em>creative</em> activities: after having experimented drawing, doing Photoshop designs, sewing, I now express my creativity by coding. I also love dogs and everything related to the 80\'s !',
+          },
+          {
+            id: 2,
+            text: 'After getting my Master\'s degree from a Business School, I started my career in 2015 in the Supply Chain as a Distribution Planner for Saint Laurent Paris. Very quickly, I started learning Visual Basics in order to automatize my weekly reports on Excel. That\'s how I discovered my passion for coding.',
+          },
+          {
+            id: 3,
+            text: 'I see any coding challenge like a <em>riddle</em> to solve. I\'m addicted to the rewarding feeling I get when I solve a bug.',
+          },
+          {
+            id: 4,
+            text: 'I started learning on my own on OpenClassrooms.com, and decided to pursue my dream of turning this passion into my job. In October 2019, I started a full-time five-months-training with O\'clock and moved from Paris to Barcelona.',
           },
         ],
       },
