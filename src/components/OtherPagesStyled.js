@@ -47,7 +47,7 @@ const OtherPagesStyled = styled.div`
     height: 290px;
     width: 290px;
   }
-  .mobile-project-name {
+  .mobile-page-name {
     position: absolute;
     bottom: .5em;
     width: 290px;
@@ -65,38 +65,36 @@ const OtherPagesStyled = styled.div`
     padding: 1em;
   }
   .presentation-part {
-    margin: 2em auto 3em;
+    margin: 2em auto 2em;
+  }
+  .presentation-title {
+    font-family: ${theme.titleFont};
+    background-color: ${theme.colorOne};
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 2em;
   }
   .presentation-section-title {
-    font-family: ${theme.titleFont};
+    font-family: ${theme.contentFont};
     width: 100%;
-    margin-left: 1em;
+    margin: 1em;
     font-size: 1.8em;
-    margin-bottom: 1.5em;
   }
-  .project-paragraph {
+  .data-paragraph {
     width: 100%;
     white-space: normal;
     font-family: ${theme.contentFont};
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: justify;
-  }
-  .list-element {
-    font-family: ${theme.contentFont};
-    font-size: 1.3em;
-    margin-left: .5em;
-    margin-bottom: .5em;
-  }
-  .skill {
-    margin-left: .7em;
-    font-weight: bold;
   }
   .buttons {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .project-button {
+  .button {
     padding: .5em;
     background: none;
     background-color: rgba(255, 255, 255, 0.8);
@@ -122,7 +120,7 @@ const OtherPagesStyled = styled.div`
       height: 498px;
       width: 498px;
     }
-    .mobile-project-name {
+    .mobile-page-name {
       width: 498px;
       font-size: 3em;
     }
@@ -166,13 +164,6 @@ const OtherPagesStyled = styled.div`
       display: inline-block;
       box-shadow: inset 0 0 5px grey;
       }
-    .project-name {
-      text-align: center;
-      color: ${theme.colorTwo};
-      font-family: ${theme.titleFont};
-      font-size: 1.8em;
-      margin-top: 0;
-    }
     .presentation-section {
       width: 50vw;
       background-image: url(${pineapple1});
@@ -182,20 +173,18 @@ const OtherPagesStyled = styled.div`
     }
     .presentation-wrapper {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
       width: 100%;
       height: 100%;
       padding: 0;
-      /* background-color: rgba(255, 255, 255, 0.3); */
     }
     .presentation-part {
-      width: 25vw;
+      width: 90%;
       white-space: normal;
     }
     .presentation-section-title {
       width: 100%;
-      color: ${theme.colorTwo};
+      color: ${theme.colorOne};
     }
     .project-paragraph {
       width: 100%;
@@ -230,9 +219,6 @@ const OtherPagesStyled = styled.div`
     }
     .presentation-section {
       width: 60vw;
-    }
-    .presentation-part {
-      width: 25vw;
     }
   }
   @media only screen and (min-width: 1210px) {

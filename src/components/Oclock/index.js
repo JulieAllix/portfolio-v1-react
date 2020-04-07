@@ -18,31 +18,28 @@ class Oclock extends React.Component {
                 alt={data.alt}
                 className="picture-mobile"
               />
-              <h2 className="mobile-project-name">
+              <h2 className="mobile-page-name">
                 {data.title}
               </h2>
             </div>
             <div className="presentation-wrapper">
               <div className="presentation-part">
-                <h2 className="presentation-section-title">About</h2>
-                <p className="project-paragraph">
-                  {data.about}
-                </p>
-              </div>
-              <div className="presentation-part">
-                <h2 className="presentation-section-title">Timing</h2>
-                <p className="project-paragraph">
-                  {data.timing}
-                </p>
-              </div>
-              <div className="presentation-part">
-                <h2 className="presentation-section-title">Concepts / Skills used</h2>
-              </div>
-              <div className="presentation-part">
-                <h2 className="presentation-section-title">New concepts discovered</h2>
+                <h1 className="presentation-title">
+                  {data.title}
+                </h1>
+                {data.content.map((dataBlock) => (
+                  <div key={dataBlock.id} className="presentation-paragraph">
+                    <h2 className="presentation-section-title">{dataBlock.title}</h2>
+                    {dataBlock.paragraphs.map((dataParagraph) => (
+                      <p key={dataParagraph.id} className="data-paragraph">
+                        {dataParagraph.text}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
               <div className="buttons">
-                <a href={data.url} className="project-button" type="button">
+                <a href={data.url} className="button" type="button">
                   Learn more about this training (FR)
                 </a>
               </div>
