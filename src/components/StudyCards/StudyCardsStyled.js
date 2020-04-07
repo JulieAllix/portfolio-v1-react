@@ -254,18 +254,10 @@ const StudyCardsStyled = styled.div`
       font-size: 2.5em;
     }
   }
-
-  @media only screen and (min-width: 1210px) {
-
+  @media only screen and (max-height: 414px) {
+    height: 76vh;
   }
 
-  @media only screen and (min-width: 1330px) {
-
-  }
-  
-  @media only screen and (min-width: 1630px) {
-
-  }
 `;
 
 export default StudyCardsStyled;

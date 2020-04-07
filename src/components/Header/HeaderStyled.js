@@ -120,6 +120,12 @@ const HeaderStyled = styled.div`
     }
 
   }
+  @media only screen and (max-height: 414px) {
+    height: 12vh;
+    .julie {
+      font-size: 2em;
+    }
+  }
 `;
 
 export default HeaderStyled;

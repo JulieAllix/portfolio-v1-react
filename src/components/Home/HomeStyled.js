@@ -149,6 +149,9 @@ const HomeStyled = styled.div`
       margin: 4em 0 2em;
     }
   }
+  @media only screen and (max-height: 414px) {
+    height: 76vh;
+  }
 `;
 
 export default HomeStyled;

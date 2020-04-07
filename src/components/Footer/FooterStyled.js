@@ -29,6 +29,9 @@ const FooterStyled = styled.div`
       margin: .5em 2em;
     }
   }
+  @media only screen and (max-height: 414px) {
+    height: 12vh;
+  }
 `;
 
 export default FooterStyled;
