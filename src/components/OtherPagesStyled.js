@@ -23,7 +23,7 @@ const OtherPagesStyled = styled.div`
   .presentation-section-second-level {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: .5em;
     overflow-x: hidden;
       ::-webkit-scrollbar {
@@ -47,19 +47,6 @@ const OtherPagesStyled = styled.div`
     height: 290px;
     width: 290px;
   }
-  .mobile-page-name {
-    position: absolute;
-    bottom: .5em;
-    width: 290px;
-    padding: .5em;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: ${theme.colorTwo};
-    font-family: ${theme.titleFont};
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    border: 2px solid lightgrey;
-  }
   .presentation-wrapper {
     width: 100%;
     padding: 1em;
@@ -69,18 +56,25 @@ const OtherPagesStyled = styled.div`
   }
   .presentation-title {
     font-family: ${theme.titleFont};
-    background-color: ${theme.colorOne};
+    color: ${theme.colorOne};
     padding: 0.5em;
     text-align: center;
     width: 100%;
-    color: white;
-    margin-bottom: 2em;
+    margin-bottom: .5em;
+    font-size: 1.8em;
+    white-space: normal;
+  }
+  .presentation-section-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .presentation-section-title {
-    font-family: ${theme.contentFont};
+    font-family: ${theme.titleFont};
     width: 100%;
     margin: 1em;
-    font-size: 1.8em;
+    font-size: 1.4em;
+    white-space: normal;
   }
   .data-paragraph {
     width: 100%;
@@ -88,6 +82,10 @@ const OtherPagesStyled = styled.div`
     font-family: ${theme.contentFont};
     font-size: 1.5em;
     text-align: justify;
+  }
+  em {
+    color: ${theme.colorOne};
+    font-weight: bold;
   }
   .buttons {
     display: flex;
@@ -106,6 +104,7 @@ const OtherPagesStyled = styled.div`
     border-radius: 5px;
     margin-top: .5em;
     text-align: center;
+    white-space: normal;
     &:hover {
       background-color: ${theme.colorOne};
       color: white;
@@ -119,10 +118,6 @@ const OtherPagesStyled = styled.div`
     .picture-mobile {
       height: 498px;
       width: 498px;
-    }
-    .mobile-page-name {
-      width: 498px;
-      font-size: 3em;
     }
   }
 
@@ -182,9 +177,17 @@ const OtherPagesStyled = styled.div`
       width: 90%;
       white-space: normal;
     }
+    .presentation-title {
+      font-family: ${theme.titleFont};
+      background-color: ${theme.colorOne};
+      color: white;
+      margin-bottom: 2em;
+      font-size: 1.9em;
+    }
     .presentation-section-title {
       width: 100%;
-      color: ${theme.colorOne};
+      color: black;
+      font-size: 1.8em;
     }
     .project-paragraph {
       width: 100%;

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import otherData from 'src/assets/data/otherData';
 import OtherPagesStyled from 'src/components/OtherPagesStyled';
 
@@ -18,9 +18,6 @@ class Oclock extends React.Component {
                 alt={data.alt}
                 className="picture-mobile"
               />
-              <h2 className="mobile-page-name">
-                {data.title}
-              </h2>
             </div>
             <div className="presentation-wrapper">
               <div className="presentation-part">
@@ -29,10 +26,13 @@ class Oclock extends React.Component {
                 </h1>
                 {data.content.map((dataBlock) => (
                   <div key={dataBlock.id} className="presentation-paragraph">
-                    <h2 className="presentation-section-title">{dataBlock.title}</h2>
+                    <div className="presentation-section-title-wrapper">
+                      <Icon name={dataBlock.icon} size="big" color="black" className="icon-link" />
+                      <h2 className="presentation-section-title">{dataBlock.title}</h2>
+                    </div>
                     {dataBlock.paragraphs.map((dataParagraph) => (
                       <p key={dataParagraph.id} className="data-paragraph">
-                        {dataParagraph.text}
+                        <div dangerouslySetInnerHTML={ {__html: dataParagraph.text } }/>
                       </p>
                     ))}
                   </div>

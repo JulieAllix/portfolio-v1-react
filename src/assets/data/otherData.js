@@ -12,16 +12,18 @@ export default [
       {
         id: 1,
         title: 'A virtual classroom',
+        icon: 'computer',
         paragraphs: [
           {
             id: 1,
-            text: 'O\'clock is a French school based on a "teleworking" model : there is a virtual classroom enabling the teachers to teach from home, and the students to learn from home as well. The interface shows the screen & webcam of the teacher, and there is a chat enabling the students to interact with the teacher and the other students. There is no time lost in the public transportations, which means more time to sleep, and more time to study or work on personal projects.',
+            text: 'O\'clock is a French school based on a "<em>teleworking</em>" model : there is a virtual classroom enabling the teachers to teach from home, and the students to learn from home as well. The interface shows the screen & webcam of the teacher, and there is a chat enabling the students to interact with the teacher and the other students. There is no time lost in the public transportations, which means more time to sleep, and more time to study or work on personal projects.',
           },
         ],
       },
       {
         id: 2,
         title: 'The organization of the class',
+        icon: 'folder open outline',
         paragraphs: [
           {
             id: 1,
@@ -29,7 +31,7 @@ export default [
           },
           {
             id: 2,
-            text: 'The training I\'m in is based of three months for learning the basics to become a web developer (html, css, php, js, sql), then one month of specialization (Symfony, React, or Wordpress). And then one month of full-time team-project (the "Apotheosis").',
+            text: 'The training I\'m in is based of three months for learning the basics to become a web developer (<em>html, css, php, js, sql</em>), then one month of specialization (<em>Symfony, React, or Wordpress</em>). And then one month of full-time team-project (the "Apotheosis").',
           },
           {
             id: 3,
@@ -40,6 +42,7 @@ export default [
       {
         id: 3,
         title: 'A training with a lot of practical exercises',
+        icon: 'pencil alternate',
         paragraphs: [
           {
             id: 1,
@@ -51,7 +54,7 @@ export default [
           },
           {
             id: 3,
-            text: 'And as mentioned above, the training ends with one month of full-time project in teams, in autonomy, to experiment the real work conditions.',
+            text: 'And as mentioned above, the training ends with one month of <em>full-time project in teams</em>, in autonomy, to experiment the real work conditions.',
           },
         ],
       },
