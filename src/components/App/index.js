@@ -6,6 +6,7 @@ import StudyCards from 'src/components/StudyCards';
 import Portfolio from 'src/components/Portfolio';
 import Grocereaz from 'src/components/Grocereaz';
 import BreakFree from 'src/components/BreakFree';
+import Oclock from 'src/components/Oclock';
 import Footer from 'src/components/Footer';
 import AppStyled from './AppStyled';
 
@@ -19,6 +20,7 @@ const App = () => (
       <Route exact path="/portfolio" component={Portfolio} />
       <Route exact path="/grocereaz" component={Grocereaz} />
       <Route exact path="/break-free" component={BreakFree} />
+      <Route exact path="/oclock" component={Oclock} />
       <Redirect to="/" />
     </Switch>
     <Footer />
