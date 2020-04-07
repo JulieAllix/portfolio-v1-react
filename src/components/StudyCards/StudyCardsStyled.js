@@ -19,7 +19,6 @@ const StudyCardsStyled = styled.div`
     background-image: url(${pineapple1});
     background-position: center;
     background-repeat: no-repeat;
-
   }
   .presentation-section-second-level {
     width: 100%;
@@ -143,15 +142,16 @@ const StudyCardsStyled = styled.div`
     .picture-desktop-wrapper {
       position: relative;
       margin: 0 auto;
-      border: 2px solid lightgrey;
+      border: 2px solid #bbb;
       background-color: #eee;
       padding: .5em;
       height: 410px;
       width: 435px;
       transform: rotate(2deg);
+      box-shadow: inset 0 0 5px lightgrey;
     }
     .picture-desktop {
-      border: 2px solid lightgrey;
+      border: 2px solid #bbb;
       height: 350px;
       width: 418px;
     }

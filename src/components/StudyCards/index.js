@@ -75,10 +75,6 @@ class StudyCards extends React.Component {
                     <Icon name="check circle" size="small" color="yellow" />
                     <span className="skill">Theme switch</span>
                   </li>
-                  <li className="list-element">
-                    <Icon name="check circle" size="small" color="yellow" />
-                    <span className="skill">Toggle switch</span>
-                  </li>
                 </ul>
               </div>
               <div className="buttons">
