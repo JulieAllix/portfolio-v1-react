@@ -26,8 +26,8 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
           <Link to="/">
             <li className="burger-menu-link" onClick={handleClick}>Home</li>
           </Link>
-          <Link to="/about">
-            <li className="burger-menu-link" onClick={handleClick}>About</li>
+          <Link to="/contact">
+            <li className="burger-menu-link" onClick={handleClick}>Contact</li>
           </Link>
           <Link to="/oclock">
             <li className="burger-menu-link" onClick={handleClick}>My training</li>
@@ -89,9 +89,6 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
         </ul>
         <Link to="/">
           <li className="menu-link">Home</li>
-        </Link>
-        <Link to="/about">
-          <li className="menu-link">About</li>
         </Link>
         <Link to="/oclock">
           <li className="menu-link">My training</li>

@@ -7,7 +7,7 @@ import Portfolio from 'src/components/Portfolio';
 import Grocereaz from 'src/components/Grocereaz';
 import BreakFree from 'src/components/BreakFree';
 import Oclock from 'src/components/Oclock';
-import About from 'src/components/About';
+import Contact from 'src/components/Contact';
 import Footer from 'src/components/Footer';
 import AppStyled from './AppStyled';
 
@@ -22,7 +22,7 @@ const App = () => (
       <Route exact path="/grocereaz" component={Grocereaz} />
       <Route exact path="/break-free" component={BreakFree} />
       <Route exact path="/oclock" component={Oclock} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
       <Redirect to="/" />
     </Switch>
     <Footer />

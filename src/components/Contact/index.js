@@ -6,7 +6,7 @@ import OtherPagesStyled from 'src/components/OtherPagesStyled';
 const data = otherData[1];
 
 // eslint-disable-next-line react/prefer-stateless-function
-class About extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <OtherPagesStyled>
@@ -43,6 +43,20 @@ class About extends React.Component {
                   <Icon name="quote right" size="big" color="grey" />
                 </div>
               </div>
+              <div className="contact-infos">
+                <div className="contact-info">
+                  <Icon name="mail" size="big" color="grey" />
+                  allixjulie@gmail.com
+                </div>
+                <div className="contact-info">
+                  <Icon name="linkedin" size="big" color="grey" />
+                  <a href="https://www.linkedin.com/in/julieallix/">LinkedIn</a>
+                </div>
+                <div className="contact-info">
+                  <Icon name="github" size="big" color="grey" />
+                  <a href="https://github.com/JulieAllix">GitHub</a>
+                </div>
+              </div>
               <div className="buttons">
                 <a href={data.url} className="button" type="button">
                   {data.buttonContent}
@@ -66,4 +80,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Contact;

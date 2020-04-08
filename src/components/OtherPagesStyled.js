@@ -70,12 +70,6 @@ const OtherPagesStyled = styled.div`
     justify-content: flex-start;
     margin-bottom: .5em;
   }
-  .icon-wrapper-right {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: .5em;
-  }
   .presentation-paragraph-about {
     width: 90%;
     margin: 0 auto;
@@ -109,6 +103,35 @@ const OtherPagesStyled = styled.div`
   em {
     color: ${theme.colorOne};
     font-weight: bold;
+  }
+  .icon-wrapper-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .5em;
+  }
+  .contact-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: ${theme.colorTwo};
+    &:hover {
+      color: ${theme.colorThree};
+    }
+    a {
+      color: ${theme.colorTwo};
+      &:hover {
+      color: ${theme.colorThree};
+    }
+    }
   }
   .buttons {
     display: flex;
@@ -215,6 +238,14 @@ const OtherPagesStyled = styled.div`
     }
     .project-paragraph {
       width: 100%;
+    }
+    .contact-infos {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-info {
+      margin: 0 .5em;
     }
     .buttons {
       width: 30vw;
