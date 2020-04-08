@@ -2,21 +2,33 @@ import styled from 'styled-components';
 import theme from 'src/styles/theme';
 import wall from 'src/assets/images/wall.jpg';
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
+import pineapple2 from 'src/assets/images/pineapple-2.jpg';
+import plants from 'src/assets/images/plants.jpg';
+import plants2 from 'src/assets/images/plants-2.jpg';
+import plants3 from 'src/assets/images/plants-3.jpg';
+import plants4 from 'src/assets/images/plants-4.jpg';
 
 const ProjectPresentationStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 1;
-  height: 83vh;
+  height: 87vh;
 
+  a {
+    font-weight: bold;
+    color: ${theme.colorThree};
+    &:hover {
+      color: ${theme.colorTwo};
+    }
+  }
   .picture-section {
     display: none;
   }
   .presentation-section {
     width: 100%;
     height: 100%;
-    background-image: url(${pineapple1});
+    background-image: url(${pineapple2});
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -129,13 +141,13 @@ const ProjectPresentationStyled = styled.div`
   }
 
   @media only screen and (min-width: 980px) {
-    height: 84vh;
+    height: 87vh;
 
     .picture-section {
       display: flex;
       align-items: center;
       width: 50vw;
-      height: 84vh;
+      height: 87vh;
       border-right: 2px solid lightgrey;
       background-image: url(${wall});
     }
@@ -175,7 +187,6 @@ const ProjectPresentationStyled = styled.div`
     }
     .presentation-section {
       width: 50vw;
-      background-image: url(${pineapple1});
     }
     .picture-mobile-wrapper {
       display: none;
@@ -206,7 +217,7 @@ const ProjectPresentationStyled = styled.div`
     }
   }
   @media only screen and (min-width: 1025px) {
-    height: 84vh;
+    height: 87vh;
 
     .picture-section {
       width: 40vw;

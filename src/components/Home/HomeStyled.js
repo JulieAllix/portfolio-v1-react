@@ -3,20 +3,13 @@ import theme from 'src/styles/theme';
 
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 import wood from 'src/assets/images/wood.jpg';
-
-/*
-import zebra from 'src/assets/images/zebra.jpg';
-import pineapple2 from 'src/assets/images/pineapple-2.jpg';
-import ice from 'src/assets/images/ice.jpg';
-import wall from 'src/assets/images/wall.jpg';
-import polygon from 'src/assets/images/polygon.jpg';
-*/
+import chalkboard from 'src/assets/images/chalkboard.jpg';
 
 const HomeStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 83vh;
+  height: 88vh;
   z-index: 1;
 
   .skills-section {
@@ -26,6 +19,15 @@ const HomeStyled = styled.div`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+      background: none;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${theme.colorOne};
+    }
     background-image: url(${pineapple1});
   }
   .projects-wrapper {
@@ -35,7 +37,7 @@ const HomeStyled = styled.div`
   }
 
   @media only screen and (min-width: 980px) {
-    height: 84vh;
+    
 
     .projects-section {
       width: 60%;
@@ -48,31 +50,41 @@ const HomeStyled = styled.div`
       flex-direction: column;
       justify-content: center;
       overflow-x: hidden;
-      background-image: url(${wood});
-      background-position: center;
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+      ::-webkit-scrollbar-track {
+        background: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: ${theme.colorOne};
+      }
+      background-image: url(${chalkboard});
+      background-size: cover;
+      /*background-position: center;*/
       background-repeat: no-repeat;
     }
     .skills-intro-wrapper {
       margin: 12em 0 2em;
-      padding: .5em;
+      padding: 0 .5em;
       font-size: 1em;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       white-space: normal;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.1);
     }
     .skills-intro {
       overflow: visible;
       font-family: ${theme.contentFont};
-      color: ${theme.colorOne};
-      font-weight: bold;
+      color: white;
+      font-size: 1.2em;
       margin: .5em auto;
       line-height: 2em;
       text-align: center;
     }
     .skills-wrapper {
-      background-color: rgba(255, 255, 255, 0.9);
+      /*background-color: rgba(255, 255, 255, 0.9);*/
       padding: .5em;
       display: flex;
       flex-wrap: wrap;
@@ -80,6 +92,7 @@ const HomeStyled = styled.div`
       justify-content: center;
     }
     .skill {
+      color: white;
       padding: .5em;
       z-index: 1;
       font-size: 1.2em;

@@ -2,13 +2,17 @@ import styled from 'styled-components';
 import theme from 'src/styles/theme';
 import wall from 'src/assets/images/wall.jpg';
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
+import desk from 'src/assets/images/desk.jpg';
+import pineapple2 from 'src/assets/images/pineapple-2.jpg';
+import ice from 'src/assets/images/ice.jpg';
+import polygon from 'src/assets/images/polygon.jpg';
 
 const OtherPagesStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 1;
-  height: 83vh;
+  height: 88vh;
 
   .picture-section {
     display: none;
@@ -16,14 +20,14 @@ const OtherPagesStyled = styled.div`
   .presentation-section {
     width: 100%;
     height: 100%;
-    background-image: url(${pineapple1});
+    background-image: url(${desk});
     background-position: center;
     background-repeat: no-repeat;
   }
   .presentation-section-second-level {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: .5em;
     overflow-x: hidden;
       ::-webkit-scrollbar {
@@ -170,13 +174,13 @@ const OtherPagesStyled = styled.div`
   }
 
   @media only screen and (min-width: 980px) {
-    height: 84vh;
+    height: 87vh;
 
     .picture-section {
       display: flex;
       align-items: center;
       width: 50vw;
-      height: 84vh;
+      height: 87vh;
       border-right: 2px solid lightgrey;
       background-image: url(${wall});
     }
@@ -209,7 +213,6 @@ const OtherPagesStyled = styled.div`
       }
     .presentation-section {
       width: 50vw;
-      background-image: url(${pineapple1});
     }
     .picture-mobile-wrapper {
       display: none;
@@ -253,7 +256,7 @@ const OtherPagesStyled = styled.div`
     }
   }
   @media only screen and (min-width: 1025px) {
-    height: 84vh;
+    height: 87vh;
 
     .picture-section {
       width: 40vw;
