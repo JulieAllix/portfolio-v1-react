@@ -95,35 +95,35 @@ const HeaderStyled = styled.div`
     }
 
     .grocereaz {
-      transform: translateX(1000px);
+      transform: translateY(1000px);
       transition: .6s;
       &.menu--open{
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
       }
     }
     .break-free {
-      transform: translateX(1000px);
+      transform: translateY(1000px);
       transition: .7s;
       &.menu--open{
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
       }
     }
     .portfolio {
-      transform: translateX(1000px);
+      transform: translateY(1000px);
       transition: .8s;
       &.menu--open{
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
       }
     }
     .study-cards {
-      transform: translateX(1000px);
+      transform: translateY(1000px);
       transition: .9s;
       &.menu--open{
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
       }
     }
 

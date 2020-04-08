@@ -10,6 +10,9 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
   const handleClick = () => {
     changeOpeningStatus(!menuIsOpen);
   };
+  const close = () => {
+    changeOpeningStatus(false);
+  };
   return (
     <HeaderStyled>
       <h1 className="julie">Julie Allix</h1>
@@ -88,13 +91,13 @@ const Header = ({ menuIsOpen, changeOpeningStatus }) => {
           </Link>
         </ul>
         <Link to="/">
-          <li className="menu-link">Home</li>
+          <li className="menu-link" onClick={close}>Home</li>
         </Link>
         <Link to="/oclock">
-          <li className="menu-link">My training</li>
+          <li className="menu-link" onClick={close}>My training</li>
         </Link>
         <Link to="/contact">
-          <li className="menu-link">Contact</li>
+          <li className="menu-link" onClick={close}>Contact</li>
         </Link>
       </ul>
     </HeaderStyled>
