@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from 'src/styles/theme';
 
 const FooterStyled = styled.div`
-  background-color: ${theme.colorTwo};
+  background-color: ${theme.colorOne};
   display: flex;
   flex-direction: row;
   justify-content: center;

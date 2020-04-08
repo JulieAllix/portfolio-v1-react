@@ -66,7 +66,7 @@ const HeaderStyled = styled.div`
     .menu-link {
       margin: auto .5em;
       cursor: pointer;
-      font-size: 1.3em;
+      font-size: ${theme.contentSize};
       color: ${theme.basicColor};
       &:hover {
         color: ${theme.colorOne};
@@ -82,7 +82,7 @@ const HeaderStyled = styled.div`
       left: 0;
     }
     .dropdown-item {
-      font-size: 1.3em;
+      font-size: ${theme.contentSize};
       margin-left: .3em;
       color: ${theme.colorOne};
       background-color: rgba(255, 255, 255, 0.9);
@@ -95,7 +95,7 @@ const HeaderStyled = styled.div`
     }
 
     .grocereaz {
-      transform: translateY(1000px);
+      transform: translateY(2000px);
       transition: .6s;
       &.menu--open{
         display: flex;
@@ -103,7 +103,7 @@ const HeaderStyled = styled.div`
       }
     }
     .break-free {
-      transform: translateY(1000px);
+      transform: translateY(2000px);
       transition: .7s;
       &.menu--open{
         display: flex;
@@ -111,7 +111,7 @@ const HeaderStyled = styled.div`
       }
     }
     .portfolio {
-      transform: translateY(1000px);
+      transform: translateY(2000px);
       transition: .8s;
       &.menu--open{
         display: flex;
@@ -119,7 +119,7 @@ const HeaderStyled = styled.div`
       }
     }
     .study-cards {
-      transform: translateY(1000px);
+      transform: translateY(2000px);
       transition: .9s;
       &.menu--open{
         display: flex;

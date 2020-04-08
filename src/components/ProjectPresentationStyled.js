@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 import theme from 'src/styles/theme';
 import wall from 'src/assets/images/wall.jpg';
-import pineapple1 from 'src/assets/images/pineapple-1.jpg';
 import pineapple2 from 'src/assets/images/pineapple-2.jpg';
-import plants from 'src/assets/images/plants.jpg';
-import plants2 from 'src/assets/images/plants-2.jpg';
-import plants3 from 'src/assets/images/plants-3.jpg';
-import plants4 from 'src/assets/images/plants-4.jpg';
 
 const ProjectPresentationStyled = styled.div`
   display: flex;
@@ -61,14 +56,14 @@ const ProjectPresentationStyled = styled.div`
   }
   .mobile-project-name {
     position: absolute;
-    bottom: .5em;
+    bottom: .8em;
     width: 290px;
     padding: .5em;
     background-color: rgba(255, 255, 255, 0.9);
     color: ${theme.colorTwo};
     font-family: ${theme.titleFont};
     text-align: center;
-    font-size: 2.5em;
+    font-size: ${theme.bigTitleSize};
     font-weight: bold;
     border: 2px solid lightgrey;
   }
@@ -80,28 +75,27 @@ const ProjectPresentationStyled = styled.div`
     margin: 2em auto 3em;
   }
   .presentation-section-title {
-    font-family: ${theme.titleFont};
+    font-family: ${theme.contentFont};
     width: 100%;
     margin-left: 1em;
-    font-size: 1.8em;
+    font-size: ${theme.titleSize};
     margin-bottom: 1.5em;
   }
   .project-paragraph {
     width: 100%;
     white-space: normal;
     font-family: ${theme.contentFont};
-    font-size: 1.3em;
+    font-size: ${theme.contentSize};
     text-align: justify;
   }
   .list-element {
     font-family: ${theme.contentFont};
-    font-size: 1.3em;
+    font-size: ${theme.contentSize};
     margin-left: .5em;
     margin-bottom: .5em;
   }
   .skill {
     margin-left: .7em;
-    font-weight: bold;
   }
   .buttons {
     display: flex;
@@ -114,7 +108,7 @@ const ProjectPresentationStyled = styled.div`
     background-color: rgba(255, 255, 255, 0.8);
     color: ${theme.colorOne};
     font-family: ${theme.contentFont};
-    font-size: 1.5em;
+    font-size: ${theme.contentSize};
     font-weight: bold;
     border: 2px solid ${theme.colorOne};
     border-radius: 5px;
@@ -136,7 +130,7 @@ const ProjectPresentationStyled = styled.div`
     }
     .mobile-project-name {
       width: 498px;
-      font-size: 3em;
+      font-size: ${theme.bigTitleSize};
     }
   }
 
@@ -182,8 +176,9 @@ const ProjectPresentationStyled = styled.div`
       text-align: center;
       color: ${theme.colorTwo};
       font-family: ${theme.titleFont};
-      font-size: 1.8em;
-      margin-top: 0;
+      font-size: ${theme.bigTitleSize};
+      margin: auto;
+      padding-top: .1em;
     }
     .presentation-section {
       width: 50vw;
@@ -206,7 +201,7 @@ const ProjectPresentationStyled = styled.div`
     }
     .presentation-section-title {
       width: 100%;
-      color: ${theme.colorTwo};
+      color: grey;
     }
     .project-paragraph {
       width: 100%;
@@ -237,7 +232,8 @@ const ProjectPresentationStyled = styled.div`
       width: 35px;
       }
     .project-name {
-      font-size: 1.8em;
+      font-size: ${theme.bigTitleSize};
+      padding-top: 0;
     }
     .presentation-section {
       width: 60vw;
@@ -262,7 +258,8 @@ const ProjectPresentationStyled = styled.div`
       width: 40px;
       }
     .project-name {
-      font-size: 2.5em;
+      font-size: ${theme.bigTitleSize};
+      padding-top: .4em;
     }
   }
   @media only screen and (max-height: 414px) {

@@ -30,7 +30,7 @@ const ProjectStyled = styled.div`
       width: 100%;
       text-align: center;
       padding: .7em;
-      font-size: 2em;
+      font-size: 1.9em;
       font-family: ${theme.titleFont};
       color: ${theme.colorTwo};
       font-weight: bold;

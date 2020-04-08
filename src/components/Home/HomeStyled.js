@@ -67,7 +67,6 @@ const HomeStyled = styled.div`
     .skills-intro-wrapper {
       margin: 12em 0 2em;
       padding: 0 .5em;
-      font-size: 1em;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -78,7 +77,7 @@ const HomeStyled = styled.div`
       overflow: visible;
       font-family: ${theme.contentFont};
       color: white;
-      font-size: 1.2em;
+      font-size: ${theme.contentSize};
       margin: .5em auto;
       line-height: 2em;
       text-align: center;

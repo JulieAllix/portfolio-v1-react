@@ -27,7 +27,7 @@ const OtherPagesStyled = styled.div`
   .presentation-section-second-level {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: .5em;
     overflow-x: hidden;
       ::-webkit-scrollbar {
@@ -59,13 +59,13 @@ const OtherPagesStyled = styled.div`
     margin: 2em auto 2em;
   }
   .presentation-title {
-    font-family: ${theme.titleFont};
+    font-family: ${theme.contentFont};
     color: ${theme.colorOne};
     padding: 0.5em;
     text-align: center;
     width: 100%;
     margin-bottom: .5em;
-    font-size: 1.8em;
+    font-size: ${theme.bigTitleSize};
     white-space: normal;
   }
   .icon-wrapper-left {
@@ -84,24 +84,25 @@ const OtherPagesStyled = styled.div`
     align-items: center;
   }
   .presentation-section-title {
-    font-family: ${theme.titleFont};
+    font-family: ${theme.contentFont};
+    color: grey;
     width: 100%;
     margin: 1em;
-    font-size: 1.4em;
+    font-size: ${theme.titleSize};
     white-space: normal;
   }
   .presentation-section-title-about {
-    font-family: ${theme.titleFont};
+    font-family: ${theme.contentFont};
     width: 100%;
     margin: 0;
-    font-size: 1.4em;
+    font-size: ${theme.titleSize};
     white-space: normal;
   }
   .data-paragraph {
     width: 100%;
     white-space: normal;
     font-family: ${theme.contentFont};
-    font-size: 1.5em;
+    font-size: ${theme.contentSize};
     text-align: justify;
   }
   em {
@@ -124,14 +125,14 @@ const OtherPagesStyled = styled.div`
     flex-direction: row;
     align-items: center;
     margin-bottom: .5em;
-    font-size: 1.3em;
+    font-size: ${theme.contentSize};
     font-weight: bold;
-    color: ${theme.colorTwo};
+    color: grey;
     &:hover {
       color: ${theme.colorThree};
     }
     a {
-      color: ${theme.colorTwo};
+      color: grey;
       &:hover {
       color: ${theme.colorThree};
     }
@@ -149,7 +150,7 @@ const OtherPagesStyled = styled.div`
     background-color: rgba(255, 255, 255, 0.8);
     color: ${theme.colorOne};
     font-family: ${theme.contentFont};
-    font-size: 1.5em;
+    font-size: ${theme.contentSize};
     font-weight: bold;
     border: 2px solid ${theme.colorOne};
     border-radius: 5px;
@@ -228,16 +229,15 @@ const OtherPagesStyled = styled.div`
       white-space: normal;
     }
     .presentation-title {
-      font-family: ${theme.titleFont};
+      font-family: ${theme.contentFont};
       background-color: ${theme.colorOne};
       color: white;
       margin-bottom: 2em;
-      font-size: 1.9em;
+      font-size: ${theme.titleFont};
     }
     .presentation-section-title {
       width: 100%;
-      color: black;
-      font-size: 1.8em;
+      font-size: ${theme.titleFont};
     }
     .project-paragraph {
       width: 100%;
@@ -275,9 +275,6 @@ const OtherPagesStyled = styled.div`
       height: 35px;
       width: 35px;
       }
-    .project-name {
-      font-size: 1.8em;
-    }
     .presentation-section {
       width: 60vw;
     }
@@ -297,9 +294,6 @@ const OtherPagesStyled = styled.div`
       height: 40px;
       width: 40px;
       }
-    .project-name {
-      font-size: 2.5em;
-    }
   }
   @media only screen and (max-height: 414px) {
     height: 76vh;

@@ -27,7 +27,7 @@ class Oclock extends React.Component {
                 {data.content.map((dataBlock) => (
                   <div key={dataBlock.id} className="presentation-paragraph">
                     <div className="presentation-section-title-wrapper">
-                      <Icon name={dataBlock.icon} size="big" color="black" />
+                      <Icon name={dataBlock.icon} size="big" color="grey" />
                       <h2 className="presentation-section-title">{dataBlock.title}</h2>
                     </div>
                     {dataBlock.paragraphs.map((dataParagraph) => (
