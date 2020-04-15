@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import theme from 'src/styles/theme';
 
 import pineapple1 from 'src/assets/images/pineapple-1.jpg';
-import wood from 'src/assets/images/wood.jpg';
-import chalkboard from 'src/assets/images/chalkboard.jpg';
+import blackBackground from 'src/assets/images/black-background.png';
 
 const HomeStyled = styled.div`
   display: flex;
@@ -38,7 +37,6 @@ const HomeStyled = styled.div`
 
   @media only screen and (min-width: 980px) {
     
-
     .projects-section {
       width: 60%;
     }
@@ -59,9 +57,8 @@ const HomeStyled = styled.div`
       ::-webkit-scrollbar-thumb {
         background: ${theme.colorOne};
       }
-      background-image: url(${chalkboard});
+      background-image: url(${blackBackground});
       background-size: cover;
-      /*background-position: center;*/
       background-repeat: no-repeat;
     }
     .skills-intro-wrapper {
@@ -77,7 +74,7 @@ const HomeStyled = styled.div`
       overflow: visible;
       font-family: ${theme.contentFont};
       color: white;
-      font-size: ${theme.contentSize};
+      font-size: ${theme.titleSize};
       margin: .5em auto;
       line-height: 2em;
       text-align: center;
@@ -92,7 +89,8 @@ const HomeStyled = styled.div`
     }
     .skill {
       color: white;
-      padding: .5em;
+      padding-left: .5em;
+      padding-right: .5em;
       z-index: 1;
       font-size: 1.2em;
       font-family: ${theme.contentFont};

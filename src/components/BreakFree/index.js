@@ -69,7 +69,7 @@ class BreakFree extends React.Component {
                 </ul>
               </div>
               <div className="buttons">
-                <a href={project.projectUrl} className="project-button" type="button">
+                <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="project-button" type="button">
                   See the project
                 </a>
                 <a href={project.gitHubUrl} className="project-button" type="button">

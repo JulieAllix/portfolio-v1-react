@@ -25,6 +25,7 @@ const ProjectPresentationStyled = styled.div`
     height: 100%;
     background-image: url(${pineapple2});
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .presentation-section-second-level {
@@ -44,8 +45,8 @@ const ProjectPresentationStyled = styled.div`
       }
   }
   .picture-mobile-wrapper {
-    height: 292px;
-    width: 292px;
+    height: 290px;
+    width: 290px;
     position: relative;
     margin: 0 auto;
   }
@@ -58,7 +59,7 @@ const ProjectPresentationStyled = styled.div`
     position: absolute;
     bottom: .8em;
     width: 290px;
-    padding: .5em;
+    padding: .1em;
     background-color: rgba(255, 255, 255, 0.9);
     color: ${theme.colorTwo};
     font-family: ${theme.titleFont};
@@ -125,11 +126,11 @@ const ProjectPresentationStyled = styled.div`
       width: 500px;
     }
     .picture-mobile {
-      height: 498px;
-      width: 498px;
+      height: 500px;
+      width: 500px;
     }
     .mobile-project-name {
-      width: 498px;
+      width: 500px;
       font-size: ${theme.bigTitleSize};
     }
   }
@@ -144,6 +145,9 @@ const ProjectPresentationStyled = styled.div`
       height: 87vh;
       border-right: 2px solid lightgrey;
       background-image: url(${wall});
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .picture-desktop-wrapper {
       position: relative;
@@ -163,7 +167,7 @@ const ProjectPresentationStyled = styled.div`
     }
     .pin {
       position: absolute;
-      right: 14em;
+      right: 12em;
       top: 1em;
       height: 35px;
       width: 35px;
@@ -226,7 +230,7 @@ const ProjectPresentationStyled = styled.div`
       width: 333px;
     }
     .pin {
-      right: 11em;
+      right: 10em;
       top: 1em;
       height: 35px;
       width: 35px;
@@ -248,18 +252,18 @@ const ProjectPresentationStyled = styled.div`
       width: 450px;
     }
     .picture-desktop {
-      height: 398px;
-      width: 428px;
+      height: 400px;
+      width: 430px;
     }
     .pin {
-      right: 15em;
+      right: 12em;
       top: 1em;
       height: 40px;
       width: 40px;
       }
     .project-name {
       font-size: ${theme.bigTitleSize};
-      padding-top: .4em;
+      padding-top: .1em;
     }
   }
   @media only screen and (max-height: 414px) {

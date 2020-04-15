@@ -22,6 +22,7 @@ const OtherPagesStyled = styled.div`
     height: 100%;
     background-image: url(${desk});
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .presentation-section-second-level {
@@ -203,7 +204,7 @@ const OtherPagesStyled = styled.div`
     }
     .pin {
       position: absolute;
-      right: 14em;
+      right: 12em;
       top: 1em;
       height: 35px;
       width: 35px;
@@ -270,7 +271,7 @@ const OtherPagesStyled = styled.div`
       width: 333px;
     }
     .pin {
-      right: 11em;
+      right: 10em;
       top: 1em;
       height: 35px;
       width: 35px;
@@ -289,7 +290,7 @@ const OtherPagesStyled = styled.div`
       width: 428px;
     }
     .pin {
-      right: 15em;
+      right: 12em;
       top: 1em;
       height: 40px;
       width: 40px;

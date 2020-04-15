@@ -32,7 +32,7 @@ export default [
           },
           {
             id: 2,
-            text: 'The training I was in is based of three months for learning the basics to become a web developer (<em>html, css, php, js, sql</em>), then one month of specialization (<em>Symfony, React, or Wordpress</em>). And then one month of full-time team-project (the "Apotheosis").',
+            text: 'The training I was in is based of three months for learning the basics to become a web developer (<em>html, css, php, js, sql</em>), then one month of specialization (<em>Symfony, React, or Wordpress</em>). I chose React. And then one month of full-time team-project, the "Apotheosis" (you can see my project on this portfolio, it\'s called Grocer\'eaz).',
           },
           {
             id: 3,
