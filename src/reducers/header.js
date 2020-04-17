@@ -3,7 +3,7 @@ import { CHANGE_OPENING_STATUS } from 'src/actions/header';
 
 // Initial State
 const initialState = {
-  menuIsOpen: 'hello',
+  menuIsOpen: true,
 };
 
 // Reducer
