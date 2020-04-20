@@ -45,7 +45,7 @@ export default [
     about: 'This is my portfolio, presenting my personal projects. A first version developped with Lumen was created in January 2020, but I decided to create a new version developped in React.',
     timing: 'I worked on this project after the end of my bootcamp, in April 2020.',
     skillsUsed: ['React', 'Redux', 'Styled Components', 'Responsive Design'],
-    skillsDiscovered: ['Class components'],
+    skillsDiscovered: ['Class components', 'Unit tests'],
     projectUrl: 'http://julieallix.com/',
     gitHubUrl: 'https://github.com/JulieAllix/portfolio-react',
   },
