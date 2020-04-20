@@ -8,7 +8,10 @@ const HomeStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  /*
   height: 88vh;
+  */
+  height: 83vh;
   z-index: 1;
 
   .skills-section {

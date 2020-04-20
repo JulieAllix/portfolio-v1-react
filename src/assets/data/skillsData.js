@@ -103,6 +103,12 @@ export default [
     project: 'grocereaz',
   },
   {
+    id: 25,
+    idName: 'unitTests',
+    skill: 'Unit tests',
+    project: 'portfolio',
+  },
+  {
     id: 18,
     idName: 'canvas',
     skill: 'Canvas',
