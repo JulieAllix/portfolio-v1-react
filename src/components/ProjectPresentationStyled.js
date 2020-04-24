@@ -212,7 +212,7 @@ const ProjectPresentationStyled = styled.div`
     }
     .buttons {
       width: 30vw;
-      margin: 3em auto 2em;
+      margin: 3em auto 3em;
     }
   }
   @media only screen and (min-width: 1025px) {
