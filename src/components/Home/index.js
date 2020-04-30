@@ -16,6 +16,7 @@ class Home extends React.Component {
       breakFreeIsHighlighted: false,
       studyCardsIsHighlighted: false,
     };
+    this.consoleLog = this.consoleLog.bind(this);
   }
 
   highlight(project, bool) {
@@ -45,15 +46,19 @@ class Home extends React.Component {
     }
   }
 
+  consoleLog(children) {
+    console.log(children);
+    return false;
+  }
+
   render() {
     return (
       <HomeStyled>
         <section className="projects-section">
           <div className="projects-wrapper">
             {projectsData.map((project) => (
-              <Link to={project.slug}>
+              <Link to={project.slug} key={project.id}>
                 <Project
-                  key={project.id}
                   projectClass={project.projectClass}
                   highlightedProject={this.state[project.highlightedProject]}
                   projectName={project.projectName}

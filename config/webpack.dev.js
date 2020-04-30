@@ -46,6 +46,7 @@ module.exports = merge(common, {
 
   devServer: {
     historyApiFallback: true,
+    publicPath: '/',
     contentBase: paths.build,
     clientLogLevel: 'warn',
     overlay: true,
