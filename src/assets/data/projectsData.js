@@ -17,7 +17,7 @@ export default [
     skillsUsed: ['React', 'Redux', 'Functional components', 'Axios', 'Git / Github', 'Styled Components', 'Responsive design', 'Semantic UI' ],
     skillsDiscovered: ['Agile method', 'Teamwork', 'APIs', 'Git conflicts', 'Wireframes'],
     projectUrl: 'http://ec2-3-95-187-31.compute-1.amazonaws.com/',
-    gitHubUrl: 'https://github.com/O-clock-Y/projet-grocereaz',
+    gitHubUrl: 'https://github.com/JulieAllix/projet-grocereaz',
   },
   {
     id: 2,

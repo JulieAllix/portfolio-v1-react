@@ -16,9 +16,13 @@ const HeaderStyled = styled.div`
     font-size: 2.3em;
     font-weight: normal;
     margin: auto .5em;
-    color: ${theme.colorOne};
-    width: 100%;
+    /*color: ${theme.colorOne};*/
+    width: 12%;
     text-align: center;
+    background: linear-gradient(to right, ${theme.colorOne}, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*display: inline;*/
   }
   .burger-menu {
     position: relative;
