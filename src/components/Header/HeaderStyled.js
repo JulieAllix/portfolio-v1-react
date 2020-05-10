@@ -17,7 +17,7 @@ const HeaderStyled = styled.div`
     font-weight: normal;
     margin: auto .5em;
     /*color: ${theme.colorOne};*/
-    width: 12%;
+    width: 100%;
     text-align: center;
     background: linear-gradient(to right, ${theme.colorOne}, pink);
     -webkit-background-clip: text;

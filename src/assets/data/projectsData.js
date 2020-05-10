@@ -1,7 +1,7 @@
 import breakFree from 'src/assets/images/break-free.jpg';
 import grocereaz from 'src/assets/images/grocereaz.JPG';
 import studyCards from 'src/assets/images/study-cards.jpg';
-import portfolio from 'src/assets/images/portfolio.JPG';
+import portfolio from 'src/assets/images/portfolio-v2.JPG';
 
 export default [
   {
