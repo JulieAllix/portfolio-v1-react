@@ -46,8 +46,8 @@ export default [
     timing: 'I worked on this project after the end of my bootcamp, in April 2020.',
     skillsUsed: ['React', 'Redux', 'Styled Components', 'Responsive Design'],
     skillsDiscovered: ['Class components', 'Unit tests'],
-    projectUrl: 'http://julieallix.com/',
-    gitHubUrl: 'https://github.com/JulieAllix/portfolio-react',
+    projectUrl: 'http://portfolio-v1.julieallix.com/',
+    gitHubUrl: 'https://github.com/JulieAllix/portfolio-v1-react',
   },
   {
     id: 4,
